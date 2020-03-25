@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Герасименко](https://up.htmlacademy.ru/adaptive/19/user/1167871).
-* Наставник: `Неизвестно`.
+* Наставник: [Виктор Гирда](https://htmlacademy.ru/profile/viktorgirda).
 
 ---
 
