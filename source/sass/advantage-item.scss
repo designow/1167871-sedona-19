@@ -19,6 +19,7 @@
 
 .advantage-item--home {
   position: relative;
+
   & ::before {
     content: "";
     position: absolute;
@@ -33,6 +34,7 @@
 
 .advantage-item--souvenirs {
   position: relative;
+
   & ::before {
     content: "";
     position: absolute;
@@ -48,6 +50,7 @@
 
 .advantage-item--food {
   position: relative;
+
   & ::before {
     content: "";
     position: absolute;
