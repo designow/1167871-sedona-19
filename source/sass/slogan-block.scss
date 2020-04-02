@@ -1,4 +1,4 @@
-.slogan-block{
+.slogan-block {
   background-image: url($mobile-bg-url);
   background-repeat: no-repeat;
   background-position: center;
@@ -7,14 +7,16 @@
   align-items: center;
   margin-top: 60px;
 }
-.slogan-block--main{
+
+.slogan-block--main {
   height: 389px;
+
 }
-.slogan-block-inner{
-  height:160px;
+.slogan-block-inner {
+  height: 160px;
 }
 
-.slogan-block__welcome-text{
+.slogan-block__welcome-text {
   background-image: url("../img/text-sedona-index.svg");
   background-repeat: no-repeat;
   background-size: contain;
@@ -22,16 +24,15 @@
   height: 214px;
 }
 
-.slogan-block__welcome-text--inner{
+.slogan-block__welcome-text--inner {
   background-image: url("../img/text-sedona.svg");
   background-position: center;
-
 }
 
-.page-header__menu-btn{
+.page-header__menu-btn {
   border: 0;
   background-color: transparent;
-  background-image: url(../img/icon-menu.svg);
+  background-image: url("../img/icon-menu.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 22px;

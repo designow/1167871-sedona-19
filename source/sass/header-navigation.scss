@@ -1,12 +1,13 @@
-.header-navigation{
+.header-navigation {
   background-color: $menu-background;
   position: relative;
 }
-.header-navigation__close{
+
+.header-navigation__close {
   position: absolute;
   border: 0;
   background-color: transparent;
-  background-image: url(../img/icon-cross.svg);
+  background-image: url("../img/icon-cross.svg");
   background-repeat: no-repeat;
   background-size: contain;
   width: 22px;

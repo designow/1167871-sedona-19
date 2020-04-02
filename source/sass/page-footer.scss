@@ -1,16 +1,17 @@
-.page-footer{
+.page-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.page-footer__hashtag{
+
+.page-footer__hashtag {
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
 }
 
-.page-footer__copyright{
+.page-footer__copyright {
   position: relative;
   margin-top: 20px;
   font-size: 14px;
@@ -20,7 +21,7 @@
   line-height: 26px;
   padding-right: 40px;
   padding-bottom: 30px;
-  &::after{
+  & ::after {
     content: "";
     position: absolute;
     background-image: url("../img/logo-htmlacademy.svg");
