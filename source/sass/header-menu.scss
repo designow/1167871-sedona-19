@@ -1,0 +1,21 @@
+.header-menu{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.header-menu__item{
+  border-bottom: 1px solid #678fa8;
+  text-align: center;
+}
+
+.header-menu__url{
+  color: #FFFFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 40px;
+  width: 100%;
+  display: block;
+  padding: 10px 0;
+}

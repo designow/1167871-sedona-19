@@ -1,0 +1,19 @@
+.intro-block{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.intro-block__heading{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 26px;
+  width: 255px;
+}
+
+.intro-block__intro{
+  text-align: center;
+  text-transform: uppercase;
+  width: 285px;
+}

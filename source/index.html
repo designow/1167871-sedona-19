@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sedona - главная страница</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
 
-  </body>
+<body>
+  <div class="container">
+  <header class="page-header">
+    <nav class="header-navigation">
+      <button class="header-navigation__close">X</button>
+      <ul class="header-menu">
+        <li class="header-menu__item"><a href="#" class="header-menu__url">Главная</a>
+        <li class="header-menu__item"><a href="#" class="header-menu__url">Фото и видео</a>
+        <li class="header-menu__item"><a href="#" class="header-menu__url">Форма отзыва</a>
+        <li class="header-menu__item"><a href="#" class="header-menu__url">Html Academy</a>
+      </ul>
+    </nav>
+    <button class="page-header__menu-btn"></button>
+    <h1 class="visually-hidden">Сайт Sedona</h1>
+    <a href="/" class="page-header__logo"></a>
+    <section class="slogan-block slogan-block--main">
+      <div class="slogan-block__welcome-text"></div>
+    </section>
+  </header>
+  <main class="page-main">
+    <section class="intro-block">
+      <h2 class="intro-block__heading">Седона - небольшой городок в аризоне, заслуживающий большего!</h2>
+      <p class="intro-block__intro">Рассмотрим 5 причин, по которым седона круче, чем гранд каньон!</p>
+      <div class="advantages advantages--blue">
+        <div class="advantages__wrapper">
+        <h3 class="advantages__heading advantages__heading--color">Настоящий городок</h3>
+        <span class="advantages__number advantages__number--color">№1</span>
+        <p class="advantages__text advantages__text--color">Седона не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <img src="./img/main-city-mobile@1x.jpg" alt="" class="advantages__img">
+      </div>
+        <div class="advantage-item advantage-item--home">
+          <h4 class="advantage-item__heading">Жилье</h4>
+          <p class="advantage-item__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <div class="advantage-item advantage-item--souvenirs">
+          <h4 class="advantage-item__heading">Сувениры</h4>
+          <p class="advantage-item__text">Не только китайского, но и местного производства!</p>
+        </div>
+        <div class="advantage-item advantage-item--food">
+          <h4 class="advantage-item__heading">Еда</h4>
+          <p class="advantage-item__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+
+      <div class="advantages advantages--blue">
+        <div class="advantages__wrapper">
+        <h3 class="advantages__heading advantages__heading--color">Там есть мост дьявола</h3>
+        <span class="advantages__number advantages__number--color">№2</span>
+        <p class="advantages__text advantages__text--color">Да, по нему можно пройти! Если вы осмелитесь конечно</p>
+      </div>
+        <img src="./img/photo-bridge-mobile@1x.jpg" alt="" class="advantages__img">
+      </div>
+      <div class="advantages advantages--grey">
+        <div class="advantages__wrapper advantages__wrapper--border">
+        <h3 class="advantages__heading">Небольшая площадь</h3>
+        <span class="advantages__number">№3</span>
+        <p class="advantages__text">Все интересные места находятся очень близко</p>
+        </div>
+      </div>
+      <div class="advantages advantages--grey">
+        <div class="advantages__wrapper advantages__wrapper--border">
+        <h3 class="advantages__heading">Красивая дорога</h3>
+        <span class="advantages__number">№4</span>
+        <p class="advantages__text">Ехать в седону из лас-вегаса совсем не скучно!</p>
+        </div>
+      </div>
+      <div class="advantages advantages--grey">
+        <div class="advantages__wrapper">
+        <h3 class="advantages__heading">Мало туристов</h3>
+        <span class="advantages__number">№5</span>
+        <p class="advantages__text">Большинство едет в гранд каньон и толпится там</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <h2 class="page-footer__hashtag">#visitsedona</h2>
+    <div class="social-list">
+      <a href="#" class="social-list__url social-list__url--twitter"></a>
+      <a href="#" class="social-list__url social-list__url--facebook"></a>
+      <a href="#" class="social-list__url social-list__url--youtube"></a>
+    </div>
+    <a href="#" class="page-footer__copyright">Разработано</a>
+  </footer>
+  </div>
+</body>
+
 </html>

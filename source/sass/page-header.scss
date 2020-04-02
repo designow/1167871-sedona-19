@@ -1,0 +1,16 @@
+.page-header{
+  position: relative;
+}
+.page-header__menu-btn{
+  position: absolute;
+  right: 0;
+}
+.page-header__logo{
+position: absolute;
+display: block;
+background-image: url("../img/logo-sedona-mobile.svg");
+width: 102px;
+height: 83px;
+left: 50%;
+transform: translateX(-50%);
+}
