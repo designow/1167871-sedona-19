@@ -4,13 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Sedona - отзывы</title>
 </head>
 
 <body>
+  <div class="container">
   <header class="page-header">
     <nav class="header-navigation">
-      <button class="header-navigation__close"></button>
+      <button class="header-navigation__close">X</button>
       <ul class="header-menu">
         <li class="header-menu__item"><a href="#" class="header-menu__url">Главная</a>
         <li class="header-menu__item"><a href="#" class="header-menu__url">Фото и видео</a>
@@ -20,23 +22,23 @@
     </nav>
     <button class="page-header__menu-btn"></button>
     <h1 class="visually-hidden">Сайт Sedona</h1>
-    <img src="https://via.placeholder.com/200x150" class="page-header__logo">
-    <section class="slogan-block">
-      <h2 class="slogan-block__slogan">SEDONA</h2>
+    <a href="/" class="page-header__logo"></a>
+    <section class="slogan-block slogan-block--inner">
+      <div class="slogan-block__welcome-text slogan-block__welcome-text--inner"></div>
     </section>
   </header>
   <main class="page-main">
   </main>
   <footer class="page-footer">
     <h2 class="page-footer__hashtag">#visitsedona</h2>
-    <ul class="social-list">
-      <li class="social-list__item"><a href="#" class="social-list__url social-list__url--vk">VK</a></li>
-      <li class="social-list__item"><a href="#" class="social-list__url social-list__url--fb">FB</a></li>
-      <li class="social-list__item"><a href="#" class="social-list__url social-list__url--yt">YT</a></li>
-    </ul>
-    <a href="#" class="page-footer__copyright">Разработано</a> <a href="#" class="page-footer__logotype">Логотип
-      HtmlAcademy</a>
+    <div class="social-list">
+      <a href="#" class="social-list__url social-list__url--twitter"></a>
+      <a href="#" class="social-list__url social-list__url--facebook"></a>
+      <a href="#" class="social-list__url social-list__url--youtube"></a>
+    </div>
+    <a href="#" class="page-footer__copyright">Разработано</a>
   </footer>
+  </div>
 </body>
 
 </html>

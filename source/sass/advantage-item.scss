@@ -1,0 +1,65 @@
+.advantage-item {
+  background-color: #ffffff;
+  margin-left: 70px;
+}
+
+.advantage-item__heading {
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.advantage-item__text {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+}
+
+.advantage-item--home {
+  position: relative;
+
+  & ::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-house.svg");
+    background-size: contain;
+    width: 39px;
+    height: 37px;
+    left: -50px;
+    top: 20px;
+  }
+}
+
+.advantage-item--souvenirs {
+  position: relative;
+
+  & ::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-gift.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 38px;
+    left: -50px;
+    top: 20px;
+  }
+}
+
+.advantage-item--food {
+  position: relative;
+
+  & ::before {
+    content: "";
+    position: absolute;
+    background-image: url("../img/icon-burger.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 38px;
+    left: -50px;
+    top: 20px;
+  }
+}
