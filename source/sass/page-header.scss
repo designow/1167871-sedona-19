@@ -2,11 +2,6 @@
   position: relative;
 }
 
-.page-header__menu-btn {
-  position: absolute;
-  right: 0;
-}
-
 .page-header__logo {
   position: absolute;
   display: block;
@@ -15,4 +10,30 @@
   height: 83px;
   left: 50%;
   transform: translateX(-50%);
+
+  @media screen and (min-width: $middle-size) {
+    & {
+      top: 0;
+    }
+  }
+}
+
+.page-header__menu-btn {
+  position: absolute;
+  right: 0;
+  border: 0;
+  background-color: transparent;
+  background-image: url("../img/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 22px;
+  height: 22px;
+  margin-top: 18px;
+  margin-right: 20px;
+
+  @media screen and (min-width: $middle-size) {
+    & {
+      display: none;
+    }
+  }
 }

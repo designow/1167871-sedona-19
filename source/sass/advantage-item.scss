@@ -1,6 +1,15 @@
 .advantage-item {
+  position: relative;
   background-color: #ffffff;
   margin-left: 70px;
+
+  @media screen and (min-width: $middle-size) {
+    & {
+      text-align: center;
+      margin-left: 0;
+      margin-top: 50px;
+    }
+  }
 }
 
 .advantage-item__heading {
@@ -18,48 +27,57 @@
 }
 
 .advantage-item--home {
-  position: relative;
+  position: absolute;
+  background-image: url("../img/icon-house.svg");
+  background-size: contain;
+  width: 39px;
+  height: 37px;
+  left: -50px;
+  top: 20px;
 
-  & ::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icon-house.svg");
-    background-size: contain;
-    width: 39px;
-    height: 37px;
-    left: -50px;
-    top: 20px;
+  @media screen and (min-width: $middle-size) {
+    & {
+      top: -20px;
+      left: 50%;
+      transform: translateX(-20px);
+    }
   }
 }
 
 .advantage-item--souvenirs {
-  position: relative;
+  position: absolute;
+  background-image: url("../img/icon-gift.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 38px;
+  left: -50px;
+  top: 20px;
 
-  & ::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icon-gift.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 32px;
-    height: 38px;
-    left: -50px;
-    top: 20px;
+  @media screen and (min-width: $middle-size) {
+    & {
+      top: -20px;
+      left: 50%;
+      transform: translateX(-20px);
+    }
   }
 }
 
 .advantage-item--food {
-  position: relative;
+  position: absolute;
+  background-image: url("../img/icon-burger.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 32px;
+  height: 38px;
+  left: -50px;
+  top: 20px;
 
-  & ::before {
-    content: "";
-    position: absolute;
-    background-image: url("../img/icon-burger.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 32px;
-    height: 38px;
-    left: -50px;
-    top: 20px;
+  @media screen and (min-width: $middle-size) {
+    & {
+      top: -20px;
+      left: 50%;
+      transform: translateX(-20px);
+    }
   }
 }
