@@ -1,6 +1,12 @@
 .header-navigation {
   background-color: $menu-background;
   position: relative;
+
+  @media screen and (min-width: $middle-size) {
+    & {
+      background-color: transparent;
+    }
+  }
 }
 
 .header-navigation__close {
@@ -15,4 +21,10 @@
   margin-top: 18px;
   margin-right: 20px;
   right: 0;
+
+  @media screen and (min-width: $middle-size) {
+    & {
+      display: none;
+    }
+  }
 }

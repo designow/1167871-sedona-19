@@ -1,11 +1,31 @@
 .slogan-block {
-  background-image: url($mobile-bg-url);
+  background-image:
+    url("../img/bg-intro-triangle-mobile.svg"),
+    url($mobile-bg-url);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center bottom;
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 60px;
+
+  @media screen and (min-width: $middle-size) {
+    & {
+      margin-top: 0;
+      background-image:
+        url("../img/bg-intro-triangle-tablet.svg"),
+        url("../img/bg-back-tablet@1x.jpg");
+    }
+  }
+
+  @media screen and (min-width: $large-size) {
+    & {
+      background-image:
+        url("../img/bg-intro-triangle-desktop.svg"),
+        url("../img/bg-back-desktop@1x.jpg");
+      height: 520px;
+    }
+  }
 }
 
 .slogan-block--main {
@@ -22,21 +42,16 @@
   background-size: contain;
   width: 282px;
   height: 214px;
+
+  @media screen and (min-width: $large-size) {
+    & {
+      width: 460px;
+      height: 347px;
+    }
+  }
 }
 
 .slogan-block__welcome-text--inner {
   background-image: url("../img/text-sedona.svg");
   background-position: center;
-}
-
-.page-header__menu-btn {
-  border: 0;
-  background-color: transparent;
-  background-image: url("../img/icon-menu.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 22px;
-  height: 22px;
-  margin-top: 18px;
-  margin-right: 20px;
 }

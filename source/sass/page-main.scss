@@ -1,16 +1,14 @@
-.container {
-  margin: 0 auto;
-  width: $mobile-max-size;
-
+.page-main {
   @media screen and (min-width: $middle-size) {
     & {
-      width: 768px;
+      width: 650px;
+      margin: 0 auto;
     }
   }
 
   @media screen and (min-width: $large-size) {
     & {
-      width: 1200px;
+      width: auto;
     }
   }
 }

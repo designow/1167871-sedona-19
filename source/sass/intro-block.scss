@@ -11,10 +11,38 @@
   font-size: 18px;
   line-height: 26px;
   width: 255px;
+
+  @media screen and (min-width: $middle-size) {
+    & {
+      width: 440px;
+    }
+  }
 }
 
 .intro-block__intro {
   text-align: center;
   text-transform: uppercase;
   width: 285px;
+
+  @media screen and (min-width: $middle-size) {
+    & {
+      width: 100%;
+    }
+  }
+}
+
+.intro-block__wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  @media screen and (min-width: $middle-size) {
+    & {
+      flex-direction: row;
+    }
+  }
+}
+
+.intro-block__wrapper--grey {
+  background-color: #eeeeee;
 }
