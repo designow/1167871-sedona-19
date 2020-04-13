@@ -1,14 +1,14 @@
 .page-main {
   @media screen and (min-width: $middle-size) {
     & {
-      width: 650px;
       margin: 0 auto;
+      width: 650px;
     }
   }
 
   @media screen and (min-width: $large-size) {
     & {
-      width: auto;
+      width: 100%;
     }
   }
 }

@@ -6,6 +6,7 @@
   position: absolute;
   display: block;
   background-image: url("../img/logo-sedona-mobile.svg");
+  background-repeat: no-repeat;
   width: 102px;
   height: 83px;
   left: 50%;
@@ -13,7 +14,16 @@
 
   @media screen and (min-width: $middle-size) {
     & {
+      background-image: url("../img/logo-sedona-tablet.svg");
       top: 0;
+    }
+  }
+
+  @media screen and (min-width: $large-size) {
+    & {
+      background-image: url("../img/logo-sedona-desktop.svg");
+      width: 190px;
+      height: 96px;
     }
   }
 }
@@ -23,13 +33,14 @@
   right: 0;
   border: 0;
   background-color: transparent;
-  background-image: url("../img/icon-menu.svg");
-  background-repeat: no-repeat;
-  background-size: contain;
   width: 22px;
   height: 22px;
   margin-top: 18px;
   margin-right: 20px;
+
+  & rect {
+    fill: #7eb4d0;
+  }
 
   @media screen and (min-width: $middle-size) {
     & {

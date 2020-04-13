@@ -10,7 +10,9 @@
 
   @media screen and (min-width: $large-size) {
     & {
+      background: #ffffff;
       width: 1200px;
+      box-shadow: 6px 0 20px -18px #222222, -6px 0 20px -18px #222222;
     }
   }
 }

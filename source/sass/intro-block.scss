@@ -6,15 +6,20 @@
 }
 
 .intro-block__heading {
+  font-family: $bold-font;
   text-align: center;
   text-transform: uppercase;
   font-size: 18px;
   line-height: 26px;
   width: 255px;
+  padding: 0;
+  margin: 0;
+  margin-top: 52px;
 
   @media screen and (min-width: $middle-size) {
     & {
-      width: 440px;
+      width: 446px;
+      font-size: 21px;
     }
   }
 }
@@ -22,7 +27,11 @@
 .intro-block__intro {
   text-align: center;
   text-transform: uppercase;
+  font-size: 14px;
   width: 285px;
+  margin: 0;
+  padding: 0;
+  margin-top: 30px;
 
   @media screen and (min-width: $middle-size) {
     & {
@@ -39,10 +48,27 @@
   @media screen and (min-width: $middle-size) {
     & {
       flex-direction: row;
+      justify-content: space-around;
     }
   }
 }
 
 .intro-block__wrapper--grey {
   background-color: #eeeeee;
+}
+
+.intro-block__wrapper--advantages {
+  @media screen and (min-width: $middle-size) {
+    & {
+      margin-top: 27px;
+      margin-bottom: 7px;
+    }
+  }
+
+  @media screen and (min-width: $large-size) {
+    & {
+      margin-top: 27px;
+      margin-bottom: 30px;
+    }
+  }
 }

@@ -12,6 +12,7 @@
   @media screen and (min-width: $middle-size) {
     & {
       margin-top: 0;
+      height: 520px;
       background-image:
         url("../img/bg-intro-triangle-tablet.svg"),
         url("../img/bg-back-tablet@1x.jpg");
@@ -23,17 +24,34 @@
       background-image:
         url("../img/bg-intro-triangle-desktop.svg"),
         url("../img/bg-back-desktop@1x.jpg");
-      height: 520px;
     }
   }
 }
 
 .slogan-block--main {
   height: 389px;
+
+  @media screen and (min-width: $middle-size) {
+    & {
+      height: 520px;
+    }
+  }
 }
 
-.slogan-block-inner {
+.slogan-block--inner {
   height: 160px;
+
+  @media screen and (min-width: $middle-size) {
+    & {
+      height: 291px;
+    }
+  }
+
+  @media screen and (min-width: $large-size) {
+    & {
+      height: 300px;
+    }
+  }
 }
 
 .slogan-block__welcome-text {
@@ -43,10 +61,11 @@
   width: 282px;
   height: 214px;
 
-  @media screen and (min-width: $large-size) {
+  @media screen and (min-width: $middle-size) {
     & {
-      width: 460px;
-      height: 347px;
+      background-size: auto;
+      width: 462px;
+      height: 357px;
     }
   }
 }
@@ -54,4 +73,13 @@
 .slogan-block__welcome-text--inner {
   background-image: url("../img/text-sedona.svg");
   background-position: center;
+
+  @media screen and (min-width: $middle-size) {
+    & {
+      margin-top: -22px;
+      background-size: contain;
+      width: 459px;
+      height: 98px;
+    }
+  }
 }
