@@ -19,7 +19,7 @@
   @media screen and (min-width: $middle-size) {
     & {
       box-sizing: border-box;
-      padding: 20px;
+      padding: 16px 20px;
       background-color: #f2f2f2;
       width: 100%;
       flex-direction: row;
@@ -51,29 +51,44 @@
   margin: 0;
 }
 
+.media-item__heading {
+  margin-top: 15px;
+
+  @media screen and (min-width: $middle-size) {
+    & {
+      margin-top: 0;
+    }
+  }
+}
+
 .media-item__author {
   font-weight: normal;
   text-transform: none;
 }
 
 .media-item__views {
-  position: relative;
+  display: flex;
+  align-items: center;
+  width: 63px;
+
+  & path {
+    fill: #a7a7a7;
+  }
+
+  @media screen and (min-width: $large-size) {
+    & path {
+      fill: #ffffff;
+    }
+  }
+}
+
+.media-item__views-number {
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
-  padding-left: 30px;
-
-  & ::before {
-    position: absolute;
-    content: "";
-    background-image: url("../img/icon-like.svg");
-    background-position: center;
-    background-size: contain;
-    width: 23px;
-    height: 21px;
-    left: 0;
-  }
+  padding-left: 7px;
 }
+
 
 .media-item__img {
   background-position: center;
