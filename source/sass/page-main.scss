@@ -12,3 +12,17 @@
     }
   }
 }
+
+.page-main--index {
+    @media screen and (min-width: $middle-size) {
+    & {
+      margin: 0 auto;
+      width: $middle-size;
+    }
+  }
+    @media screen and (min-width: $large-size) {
+    & {
+      width: 100%;
+    }
+  }
+}
