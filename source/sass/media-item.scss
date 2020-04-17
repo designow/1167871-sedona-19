@@ -105,66 +105,9 @@
 }
 
 .media-item__img--first {
-  background-image: url("../img/photo-sunset-mobile@1x.jpg");
-
   @media screen and (min-width: $middle-size) {
     & {
-      background-image: url("../img/photo-sunset-tablet@1x.jpg");
       height: 400px;
-    }
-  }
-
-  @media screen and (min-width: $large-size) {
-    & {
-      background-image: url("../img/photo-sunset-desktop@1x.jpg");
-    }
-  }
-}
-
-.media-item__img--second {
-  background-image: url("../img/photo-cactus-mobile@1x.jpg");
-
-  @media screen and (min-width: $middle-size) {
-    & {
-      background-image: url("../img/photo-cactus-tablet@1x.jpg");
-    }
-  }
-
-  @media screen and (min-width: $large-size) {
-    & {
-      background-image: url("../img/photo-cactus-desktop@1x.jpg");
-    }
-  }
-}
-
-.media-item__img--third {
-  background-image: url("../img/photo-roads-mobile@1x.jpg");
-
-  @media screen and (min-width: $middle-size) {
-    & {
-      background-image: url("../img/photo-roads-tablet@1x.jpg");
-    }
-  }
-
-  @media screen and (min-width: $large-size) {
-    & {
-      background-image: url("../img/photo-roads-desktop@1x.jpg");
-    }
-  }
-}
-
-.media-item__img--fourth {
-  background-image: url("../img/photo-bridge-mobile@1x.jpg");
-
-  @media screen and (min-width: $middle-size) {
-    & {
-      background-image: url("../img/photo-bridge-tablet@1x.jpg");
-    }
-  }
-
-  @media screen and (min-width: $large-size) {
-    & {
-      background-image: url("../img/photo-bridge-desktop@1x.jpg");
     }
   }
 }
