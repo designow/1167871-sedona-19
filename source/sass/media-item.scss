@@ -70,15 +70,13 @@
   display: flex;
   align-items: center;
   width: 63px;
+}
 
-  & path {
-    fill: #a7a7a7;
-  }
+.media-item__like {
+  fill: #a7a7a7;
 
   @media screen and (min-width: $large-size) {
-    & path {
-      fill: #ffffff;
-    }
+    fill: #ffffff;
   }
 }
 
