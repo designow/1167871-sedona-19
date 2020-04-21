@@ -65,11 +65,6 @@
   left: -50px;
   top: 20px;
 
-  & svg {
-    width: 38px;
-    height: 36px;
-  }
-
   & path {
     fill: #81b7cf;
   }
@@ -87,10 +82,37 @@
       height: 72px;
       order: 1;
     }
+  }
+}
 
-    & svg {
+.advantage-item__icon {
+  fill: #81b7cf;
+}
+
+.advantage-item__icon-1 {
+  @media screen and (min-width: $middle-size) {
+    & {
       width: 72px;
       height: 72px;
+    }
+  }
+}
+
+
+.advantage-item__icon-2 {
+  @media screen and (min-width: $middle-size) {
+    & {
+      width: 64px;
+      height: 77px;
+    }
+  }
+}
+
+.advantage-item__icon-3 {
+  @media screen and (min-width: $middle-size) {
+    & {
+      width: 79px;
+      height: 79px;
     }
   }
 }
@@ -102,19 +124,6 @@
   left: -50px;
   top: 20px;
 
-  & svg {
-    width: 38px;
-    height: 36px;
-  }
-
-  & path {
-    fill: #81b7cf;
-  }
-
-  & rect {
-    fill: #81b7cf;
-  }
-
   @media screen and (min-width: $middle-size) {
     & {
       top: -70px;
@@ -123,11 +132,6 @@
       width: 64px;
       height: 77px;
       order: 3;
-    }
-
-    & svg {
-      width: 64px;
-      height: 77px;
     }
   }
 }
@@ -139,23 +143,6 @@
   left: -50px;
   top: 20px;
 
-  & svg {
-    width: 38px;
-    height: 36px;
-  }
-
-  & path {
-    fill: #81b7cf;
-  }
-
-  & polygon {
-    fill: #81b7cf;
-  }
-
-  & circle {
-    fill: #81b7cf;
-  }
-
   @media screen and (min-width: $middle-size) {
     & {
       top: -70px;
@@ -164,11 +151,6 @@
       width: 79px;
       height: 70px;
       order: 2;
-    }
-
-    & svg {
-      width: 79px;
-      height: 79px;
     }
   }
 }

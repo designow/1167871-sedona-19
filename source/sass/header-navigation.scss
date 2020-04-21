@@ -19,13 +19,17 @@
   margin-right: 20px;
   right: 0;
 
-  & polygon {
-    fill: #fefbf6;
-  }
-
   @media screen and (min-width: $middle-size) {
     & {
       display: none;
     }
   }
+}
+
+.header-navigation__close-icon {
+  fill: #fefbf6;
+}
+
+.header-navigation__burger-icon {
+  fill: $menu-background;
 }

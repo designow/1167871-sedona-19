@@ -10,29 +10,32 @@
 
 <body>
   <div class="container">
-  <header class="page-header">
-    <nav class="header-navigation">
-      <button class="header-navigation__close"><svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.199px" height="22.199px" viewBox="0 0 22.199 22.199" enable-background="new 0 0 22.199 22.199" xml:space="preserve">
-        <polygon points="22.199,2.804 19.396,0 11.1,8.297 2.804,0 0,2.803 8.297,11.1 0,19.396 2.803,22.199 11.1,13.902 19.396,22.199 22.199,19.396 13.903,11.1 "/>
-      </svg></button>
-      <ul class="header-menu">
-        <li class="header-menu__item"><a href="#" class="header-menu__url">Главная</a>
-        <li class="header-menu__item"><a href="#" class="header-menu__url">Фото и видео</a>
-        <li class="header-menu__item"><a href="#" class="header-menu__url">Форма отзыва</a>
-        <li class="header-menu__item"><a href="#" class="header-menu__url">Html Academy</a>
-      </ul>
-    </nav>
-    <button class="page-header__menu-btn">
-      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22.928px" height="21.982px" viewBox="0 0 22.928 21.982" enable-background="new 0 0 22.928 21.982" xml:space="preserve">
-      <g>
-        <rect width="22.928" height="3.964"/>
-        <rect y="9.009" width="22.928" height="3.964"/>
-        <rect y="18.018" width="22.928" height="3.964"/>
-      </g>
-    </svg>
-  </button>
-    <h1 class="visually-hidden">Сайт Sedona</h1>
-    <a href="/" class="page-header__logo"></a>
+    <header class="page-header">
+      <nav class="header-navigation">
+        <button class="header-navigation__close">
+          <svg class="header-navigation__close-icon" width="22.199" height="22.199"><use xlink:href="img/sprite.svg#cross"></use></svg>
+        </button>
+        <ul class="header-menu">
+          <li class="header-menu__item"><a href="#" class="header-menu__url">Главная</a>
+          <li class="header-menu__item"><a href="#" class="header-menu__url">Фото и видео</a>
+          <li class="header-menu__item"><a href="#" class="header-menu__url">Форма отзыва</a>
+          <li class="header-menu__item"><a href="#" class="header-menu__url">Html Academy</a>
+        </ul>
+      </nav>
+      <button class="page-header__menu-btn">
+            <svg class="header-navigation__burger-icon" width="22.928" height="21.982px"><use xlink:href="img/sprite.svg#burger"></use></svg>
+      </button>
+      <h1 class="visually-hidden">Сайт Sedona</h1>
+      <a href="/" class="page-header__logo">
+        <picture>
+          <source media="(min-width: 1200px)"
+            srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)"
+            srcset="img/logo-sedona-tablet.svg">
+          <img class="photo" src="img/logo-sedona-mobile.svg"
+            alt="">
+        </picture>
+      </a>
     <section class="slogan-block slogan-block--inner">
       <div class="slogan-block__welcome-text slogan-block__welcome-text--inner"></div>
     </section>
@@ -42,11 +45,11 @@
   <footer class="page-footer">
     <h2 class="page-footer__hashtag">#visitsedona</h2>
     <div class="social-list">
-      <a href="#" class="social-list__url social-list__url--twitter"></a>
-      <a href="#" class="social-list__url social-list__url--facebook"></a>
-      <a href="#" class="social-list__url social-list__url--youtube"></a>
+      <a href="#" class="social-list__url"><svg class="social-list__icon" width="17.5" height="14.663"><use xlink:href="img/sprite.svg#twitter"></use></svg></a>
+      <a href="#" class="social-list__url"><svg class="social-list__icon" width="8.672" height="18.944"><use xlink:href="img/sprite.svg#facebook"></use></svg></a>
+      <a href="#" class="social-list__url"><svg class="social-list__icon" width="19.979" height="14.015"><use xlink:href="img/sprite.svg#youtube"></use></svg></a>
     </div>
-    <a href="#" class="page-footer__copyright">Разработано</a>
+    <a href="#" class="page-footer__copyright"><span>Разработано</span> <svg class="page-footer__academy-icon" width="27" height="34"><use xlink:href="img/sprite.svg#htmlacademy"></use></svg></a>
   </footer>
   </div>
 </body>
