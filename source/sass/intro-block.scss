@@ -9,7 +9,7 @@
   font-family: $bold-font;
   text-align: center;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: $heading-font-size-mobile;
   line-height: 26px;
   width: 255px;
   padding: 0;
@@ -27,7 +27,7 @@
 .intro-block__intro {
   text-align: center;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: $text-font-size-mobile;
   width: 285px;
   margin: 0;
   padding: 0;

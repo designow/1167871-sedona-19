@@ -15,7 +15,6 @@
 
   @media screen and (min-width: $large-size) {
     & {
-      padding-top: 100px;
       padding-bottom: 20px;
     }
   }
@@ -36,11 +35,14 @@
   text-transform: uppercase;
   text-decoration: none;
   line-height: 26px;
-  padding-right: 40px;
-  padding-bottom: 30px;
+  align-items: center;
 }
 
 .page-footer__academy-icon {
   fill: 000000;
   margin-left: 10px;
+}
+
+.page-footer__developer{
+  margin-right: 10px;
 }

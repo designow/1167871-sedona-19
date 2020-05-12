@@ -93,10 +93,10 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.scss", gulp.series("css"));
+  gulp.watch("source/*.html").on("change", gulp.series("html"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("automate", "server"));
 gulp.task("automate", gulp.series(
   "clean",
   "copy",
@@ -105,3 +105,6 @@ gulp.task("automate", gulp.series(
   "images",
   "webp",
   "sprite"));
+
+gulp.task("start", gulp.series("automate", "server"));
+
