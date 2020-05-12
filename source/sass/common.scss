@@ -45,3 +45,21 @@ body {
   width: 100%;
   height: auto;
 }
+
+.button{
+  border: 0;
+  padding: 0;
+  padding: 20px 0;
+  color: #ffffff;
+  background-color: #81b3d2;
+  font-size: 21px;
+  font-weight: bold;
+  margin-top: 45px;
+  text-transform: uppercase;
+  width: 280px;
+  @media screen and (min-width: $middle-size) {
+    & {
+      width: 460px;
+    }
+  }
+}

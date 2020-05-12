@@ -1,0 +1,28 @@
+.reviews{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.reviews__heading {
+  font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  @media screen and (min-width: $middle-size) {
+    & {
+      font-size: 30px;
+    }
+  }
+}
+
+.reviews__text{
+  font-family: "PT Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  max-width: 442px;
+}
+
+

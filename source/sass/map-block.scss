@@ -5,6 +5,7 @@
   align-items: center;
 }
 .map-block__heading{
+  font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 21px;
   margin:0;
@@ -19,19 +20,11 @@
   text-transform: uppercase;
   text-align: center;
   width: 261px;
-}
-
-.map-block__button{
-  border: 0;
-  padding: 0;
-  padding: 20px 0;
-  color: #ffffff;
-  background-color: #81b3d2;
-  font-size: 21px;
-  font-weight: bold;
-  margin-top: 45px;
-  text-transform: uppercase;
-  width: 280px;
+  @media screen and (min-width: $middle-size) {
+    & {
+      width: 440px;
+    }
+  }
 }
 
 .map-block__map{
