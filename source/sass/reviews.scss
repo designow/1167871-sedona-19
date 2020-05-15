@@ -29,12 +29,14 @@
   font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 18px;
-  margin: 20px 0;
+  margin-bottom: 20px;
   text-transform: uppercase;
   text-align: center;
   @media screen and (min-width: $middle-size) {
     & {
+      width: 300px;
       font-size: 21px;
+      margin: 0 auto 20px auto;
     }
   }
 }
@@ -45,18 +47,50 @@
       font-size: 30px;
       margin-top: 111px;
       margin-bottom: 45px;
+      width: 100%;
+    }
+  }
+}
+.reviews__heading_wrapper {
+  display: block;
+  position: relative;
+@media screen and (min-width: $middle-size) {
+    &::before, &::after {
+      position: absolute;
+      content: '';
+      height: 1px;
+      background-color:#dbdbdb;
+      width: 127px;
+      left: 0;
+      top: 50%;
+    }
+    &::after {
+      right: 0;
+      left: auto;
+    }
+  }
+  @media screen and (min-width: $large-size) {
+    &::before, &::after {
+      width: 280px;
+    }
+    &::after {
+      width: 280px;
     }
   }
 }
 
 .reviews__block {
+  position: relative;
   border-top: 1px solid #e5e5e5;
   width: 100%;
   padding: 0 20px;
+  margin-top: 20px;
   box-sizing: border-box;
   order: 4;
   @media screen and (min-width: $middle-size) {
     & {
+       padding: 0;
+       margin-top: 20px;
        border: 0;
     }
   }
@@ -92,6 +126,7 @@
     & {
       order: 1;
       width: 50%;
+      border-right: 1px solid #dbdbdb;
     }
   }
 }

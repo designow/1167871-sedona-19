@@ -19,6 +19,10 @@
   align-items: flex-start;
 }
 
+.items-list__item--last {
+  margin-bottom: 0;
+}
+
 .items-list__text {
   border: 0;
   box-sizing: border-box;
