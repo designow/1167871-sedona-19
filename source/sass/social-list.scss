@@ -13,19 +13,27 @@
 }
 
 .social-list__url {
-  background-color: #81b3d2;
+  background-color: $button-background;
   display: flex;
   width: 46px;
   height: 48px;
   margin-right: 5px;
   justify-content: center;
   align-items: center;
+  fill: $button-color;
+}
+
+.social-list__url:hover, .social-list__url:focus{
+   background-color: $button-background-hover;
+}
+
+.social-list__url:active{
+   fill: $button-color-active;
+   background-color: $button-background-down;
 }
 
 .social-list__url--last{
   margin-right: 0;
 }
 
-.social-list__icon {
-  fill: #ffffff;
-}
+

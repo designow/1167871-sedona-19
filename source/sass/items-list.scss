@@ -29,13 +29,20 @@
   padding: 20px;
   background-color: #f2f2f2;
   width: 100%;
-}
-
-.items-list__text::placeholder {
-  color: #000000;
+  &:hover{
+    background-color: $input-hover;
+  }
+   &:focus{
+    outline: transparent;
+    border: 4px solid $input-hover;
+    background-color: $input-active;
+  }
+  &::placeholder {
+  color: $input-placeholder-color;
   font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
   font-weight: bold;
   font-size: 18px;
+}
 }
 
 .items-list__memo {

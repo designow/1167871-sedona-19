@@ -34,14 +34,19 @@
   height: 22px;
   margin-top: 18px;
   margin-right: 20px;
-
-  & rect {
-    fill: #7eb4d0;
-  }
+  fill: #7eb4d0;
 
   @media screen and (min-width: $middle-size) {
     & {
       display: none;
     }
   }
+&:hover, &:focus{
+  outline: transparent;
+  opacity: 0.6;
 }
+&:active{
+  opacity: 0.3;
+}
+}
+

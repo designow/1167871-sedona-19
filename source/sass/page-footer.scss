@@ -31,16 +31,22 @@
   display: flex;
   margin-top: 27px;
   font-size: 14px;
-  color: #000000;
+  color: $base-color;
   text-transform: uppercase;
   text-decoration: none;
   line-height: 26px;
   align-items: center;
 }
+.page-footer__academylogo{
+  line-height: 0;
+}
 
-.page-footer__academy-icon {
-  fill: 000000;
-  margin-left: 10px;
+.page-footer__academylogo:hover, .page-footer__academylogo:focus{
+  fill: $header-menu-desktop-hover;
+}
+
+.page-footer__academylogo:active{
+  fill: $header-menu-desktop-down;
 }
 
 .page-footer__developer{

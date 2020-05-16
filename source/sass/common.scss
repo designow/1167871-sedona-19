@@ -50,8 +50,8 @@ body {
   border: 0;
   padding: 0;
   padding: 20px 0;
-  color: #ffffff;
-  background-color: #81b3d2;
+  color: $button-color;
+  background-color: $button-background;
   font-size: 21px;
   font-weight: bold;
   margin-top: 45px;
@@ -63,26 +63,34 @@ body {
     }
   }
 }
+
+.button:hover, .button:focus{
+  background-color: $button-background-hover;
+}
+
+.button:active{
+  color: $button-color-active;
+  background-color: $button-background-down;
+}
+
 .radio{
   position: relative;
   padding-left: 80px;
-}
-.radio::after {
-  position: absolute;
-  content: '';
-  background-color: #f2f2f2;
-  height: 57px;
-  width: 57px;
-  border-radius: 50%;
-  left: 0;
-  top: -17px;
-  z-index: 1;
-}
-
-.radio::before {
+  &::after {
+    position: absolute;
+    content: '';
+    background-color: $input-base;
+    height: 57px;
+    width: 57px;
+    border-radius: 50%;
+    left: 0;
+    top: -17px;
+    z-index: 1;
+  }
+  &::before {
   position: absolute;
   content: none;
-  background-color: #333333;
+  background-color: $input-base-dot;
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -90,6 +98,17 @@ body {
   top: 0;
   z-index: 2;
 }
+&:hover::after{
+  background-color: $input-hover;
+}
+&:active::after{
+  background-color: $input-down;
+}
+&:active::before{
+  background-color: $input-active-dot;
+}
+}
+
 
 .radio-input:checked + label::before {
   content: "";
@@ -98,20 +117,7 @@ body {
 .checkbox{
   position: relative;
   padding-left: 80px;
-}
-.checkbox::after {
-  position: absolute;
-  content: '';
-  background-color: #f2f2f2;
-  height: 57px;
-  width: 57px;
-  border-radius: 5px;
-  left: 0;
-  top: -17px;
-  z-index: 1;
-}
-
-.checkbox::before {
+  &::before {
   content: none;
   background-image: url("/img/icon-tick.svg");
   background-repeat: no-repeat;
@@ -122,6 +128,27 @@ body {
   left: 18px;
   top: 0;
   z-index: 2;
+}
+  &::after {
+  position: absolute;
+  content: '';
+  background-color: $input-base;
+  height: 57px;
+  width: 57px;
+  border-radius: 5px;
+  left: 0;
+  top: -17px;
+  z-index: 1;
+}
+  &:hover::after{
+  background-color: $input-hover;
+}
+&:active::after{
+  background-color: $input-down;
+}
+&:active::before{
+  opacity: 0.3;
+}
 }
 
 .check-input:checked + label::before {
