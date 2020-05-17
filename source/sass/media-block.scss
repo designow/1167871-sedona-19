@@ -90,6 +90,18 @@
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: -49px;
+  @media screen and (min-width: $middle-size) {
+    & {
+      width: 648px;
+      background-color: rgba(0,0,0,0.6);
+      margin-top: -96px;
+    }
+  }
+  @media screen and (min-width: $large-size) {
+    & {
+      width: 800px;
+    }
+  }
 }
 
 .media-block__volume{
@@ -104,23 +116,44 @@
     width: 235px;
     left: 22px;
     height: 3px;
-
-    top: 22px;
+    order: 1;
+    top: calc(50% - 3px);
+    @media screen and (min-width: $middle-size) {
+      width: 390px;
+    }
+    @media screen and (min-width: $large-size) {
+      width: 540px;
+      left: 0;
+    }
   }
-  &::after{
+  @media screen and (min-width: $middle-size) {
+    & {
+      height: 93px;
+      order: 2;
+      width: 62.5%;
+      background-color: transparent;
+    }
+  }
+}
+
+.media-block__volume-button {
     position: absolute;
-    content: "";
     background-color: #ffffff;
     width: 9px;
     height: 9px;
     left: 20%;
-    top: 19px;
+    top: calc(50% - 5px);
     border-radius: 50%;
-  }
+    border:0;
 }
 
 .media-block__replay-icon, .media-block__subtitles-icon, .media-block__fullscreen-icon {
   fill: #5c6870;
+  @media screen and (min-width: $middle-size) {
+    & {
+      fill: #ffffff;
+    }
+  }
 }
 
 .media-block__player-block {
@@ -129,15 +162,36 @@
   height: 66px;
   justify-content: center;
   align-items: center;
+  @media screen and (min-width: $middle-size) {
+    & {
+      height: 93px;
+    }
+  }
+
 }
 
 .media-block__replay{
   width: 25%;
+  order: 2;
+  @media screen and (min-width: $middle-size) {
+    & {
+      order: 1;
+      width: 12.5%;
+      background-color: transparent;
+    }
+  }
 }
 
 .media-block__subtitles{
   justify-content: flex-end;
   width: 50%;
+  order: 3;
+  @media screen and (min-width: $middle-size) {
+    & {
+      width: 12.5%;
+      background-color: transparent;
+    }
+  }
 }
 
 .media-block__player-button {
@@ -146,4 +200,11 @@
 }
 .media-block__fullscreen {
   width: 25%;
+  order: 4;
+  @media screen and (min-width: $middle-size) {
+    & {
+      width: 12.5%;
+      background-color: transparent;
+    }
+  }
 }
