@@ -82,3 +82,68 @@
     }
   }
 }
+
+.media-block__player{
+  box-sizing: border-box;
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: -49px;
+}
+
+.media-block__volume{
+  position: relative;
+  background-color: rgba(0,0,0,0.6);
+  height: 45px;
+  width: 100%;
+  &::before{
+    position: absolute;
+    content: "";
+    background-color: rgba(255,255,255,0.2);
+    width: 235px;
+    left: 22px;
+    height: 3px;
+
+    top: 22px;
+  }
+  &::after{
+    position: absolute;
+    content: "";
+    background-color: #ffffff;
+    width: 9px;
+    height: 9px;
+    left: 20%;
+    top: 19px;
+    border-radius: 50%;
+  }
+}
+
+.media-block__replay-icon, .media-block__subtitles-icon, .media-block__fullscreen-icon {
+  fill: #5c6870;
+}
+
+.media-block__player-block {
+  display: flex;
+  background: #f2f2f2;
+  height: 66px;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-block__replay{
+  width: 25%;
+}
+
+.media-block__subtitles{
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.media-block__player-button {
+  border: 0;
+  background-color: transparent;
+}
+.media-block__fullscreen {
+  width: 25%;
+}

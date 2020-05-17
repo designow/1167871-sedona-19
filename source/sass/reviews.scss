@@ -164,5 +164,25 @@
   }
 }
 
+.reviews__require{
+display: none;
+text-transform: uppercase;
+@media screen and (min-width: $middle-size) {
+  & {
+    display: inline;
+  }
+}
+}
 
+.reviews__button{
+  @media screen and (min-width: $middle-size) {
+    & {
+      width: 50%;
+    }
+  }
+}
+
+.reviews__wrapper--button {
+  margin-top: 45px;
+}
 

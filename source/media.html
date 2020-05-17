@@ -19,7 +19,7 @@
         </button>
         <ul class="header-menu">
           <li class="header-menu__item"><a href="#" class="header-menu__url">Главная</a>
-          <li class="header-menu__item"><a href="#" class="header-menu__url">Фото и видео</a>
+          <li class="header-menu__item"><a href="#" class="header-menu__url header-menu__url--active">Фото и видео</a>
           <li class="header-menu__item"><a href="#" class="header-menu__url">Форма отзыва</a>
           <li class="header-menu__item"><a href="#" class="header-menu__url">Html Academy</a>
         </ul>
@@ -172,6 +172,29 @@
           <source media="(min-width: 768px)" srcset="img/video-tablet@2x.jpg 1x, img/video-tablet@2x.jpg 2x">
           <img class="video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="">
         </picture>
+        <div class="media-block__player">
+            <div class="media-block__volume"></div>
+            <div class="media-block__player-block media-block__replay">
+            <button class="media-block__player-button">
+                <svg class="media-block__replay-icon" width="16" height="20">
+              <use xlink:href="img/sprite.svg#icon-video-replay"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="media-block__player-block media-block__subtitles">
+          <button class="media-block__player-button">
+              <svg class="media-block__subtitles-icon" width="32" height="20">
+            <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="media-block__player-block media-block__fullscreen">
+        <button class="media-block__player-button">
+            <svg class="media-block__fullscreen-icon" width="20" height="20">
+          <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+        </svg>
+      </button>
+    </div>
       </section>
     </main>
     <footer class="page-footer">

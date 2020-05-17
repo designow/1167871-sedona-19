@@ -54,14 +54,8 @@ body {
   background-color: $button-background;
   font-size: 21px;
   font-weight: bold;
-  margin-top: 45px;
   text-transform: uppercase;
-  width: 280px;
-  @media screen and (min-width: $middle-size) {
-    & {
-      width: 460px;
-    }
-  }
+  width: 100%;
 }
 
 .button:hover, .button:focus{
@@ -137,7 +131,7 @@ body {
   width: 57px;
   border-radius: 5px;
   left: 0;
-  top: -17px;
+  top: -19px;
   z-index: 1;
 }
   &:hover::after{
