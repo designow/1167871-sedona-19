@@ -9,24 +9,70 @@
   font-weight: bold;
   font-size: 21px;
   margin:0;
-  margin-top: 34px;
   text-transform: uppercase;
+  line-height: 26px;
+    @media screen and (min-width: $middle-size) {
+    & {
+      margin-top: 5px;
+      font-size: 30px;
+    }
+  }
 }
 
 .map-block__text{
   font-size: 14px;
-  margin: 0;
-  margin-top: 32px;
+  margin: 19px 0 0;
   text-transform: uppercase;
   text-align: center;
-  width: 261px;
-  @media screen and (min-width: $middle-size) {
+  line-height: 24px;
+   @media screen and (min-width: $middle-size) {
     & {
-      width: 440px;
+      margin: 34px 0 0;
     }
   }
 }
 
 .map-block__map{
-  margin-top: 50px;
+      margin-top: 47px;
+   @media screen and (min-width: $middle-size) {
+    & {
+      margin-top: 57px;
+    }
+  }
+   @media screen and (min-width: $large-size) {
+    & {
+      margin-top: 64px;
+    }
+  }
+}
+
+.map-block__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+  margin-top: 25px;
+  width: 279px;
+  @media screen and (min-width: $middle-size) {
+    & {
+      margin-top: 50px;
+      width: 457px;
+    }
+  }
+}
+
+.map-block__button{
+  font-size: 19px;
+  margin-top: 33px;
+   @media screen and (min-width: $middle-size) {
+    & {
+        margin-top: 42px;
+    }
+  }
+     @media screen and (min-width: $large-size) {
+    & {
+        margin-top: 46px;
+    }
+  }
 }

@@ -13,11 +13,12 @@
 }
 
 .header-menu__item {
-
+  background: $button-background;
   text-align: center;
 
   @media screen and (min-width: $middle-size) {
     & {
+      background: transparent;
       width: 20%;
       border-bottom: 0;
     }
@@ -33,8 +34,8 @@
 }
 
 .header-menu__url {
-  background-color: $button-background;
-  border-bottom: 1px solid #678fa8;
+  background-color: transparent;
+  box-shadow: 0 -1px 0 0 #9ac2db, 0 -2px 0 0 #74a1bd;
   font-family: $bold-font;
   color: $header-menu-mobile-color;
   text-transform: uppercase;
@@ -44,14 +45,14 @@
   line-height: 40px;
   width: 100%;
   display: block;
-  padding: 10px 0;
+  padding: 8px 0;
   @media screen and (min-width: $middle-size) {
     & {
       color: $header-menu-desktop-color;
       background-color: transparent;
       border-bottom: none;
       font-size: 14px;
-      padding: 8px 0;
+      padding: 14px 0;
       line-height: 26px;
     }
   }

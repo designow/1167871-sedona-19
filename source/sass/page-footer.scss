@@ -7,7 +7,7 @@
 
   @media screen and (min-width: $middle-size) {
     & {
-      padding: 56px 0 30px;
+      padding: 36px 0 30px;
       flex-direction: row;
       justify-content: space-around;
     }
@@ -25,17 +25,28 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 35px;
+     @media screen and (min-width: $middle-size) {
+    & {
+      margin: 0;
+    }
+  }
 }
 
 .page-footer__copyright {
   display: flex;
-  margin-top: 27px;
+  margin-top: 38px;
   font-size: 14px;
   color: $base-color;
   text-transform: uppercase;
   text-decoration: none;
   line-height: 26px;
   align-items: center;
+   @media screen and (min-width: $middle-size) {
+    & {
+      margin-top: 0;
+    }
+  }
 }
 .page-footer__academylogo{
   line-height: 0;

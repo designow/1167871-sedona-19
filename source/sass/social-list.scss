@@ -3,6 +3,11 @@
   padding: 0;
   margin: 0;
   display: flex;
+  @media screen and (min-width: $middle-size) {
+    & {
+      margin-left: -8px;
+    }
+  }
 
   @media screen and (min-width: $large-size) {
     & {
@@ -35,5 +40,6 @@
 .social-list__url--last{
   margin-right: 0;
 }
+
 
 

@@ -12,7 +12,7 @@
   <div class="container">
     <header class="page-header">
       <nav class="header-navigation">
-        <button class="header-navigation__close">
+        <button class="header-navigation__close visually-hidden">
           <svg class="header-navigation__close-icon" width="22.199" height="22.199">
             <use xlink:href="img/sprite.svg#icon-cross"></use>
           </svg>
@@ -24,7 +24,7 @@
           <li class="header-menu__item"><a href="#" class="header-menu__url">Html Academy</a>
         </ul>
       </nav>
-      <button class="page-header__menu-btn">
+      <button class="page-header__menu-btn visually-hidden">
         <svg class="header-navigation__burger-icon" width="22.928" height="21.982px">
           <use xlink:href="img/sprite.svg#icon-menu"></use>
         </svg>
@@ -44,7 +44,9 @@
     <main class="page-main">
       <section class="media-block">
         <h2 class="media-block__heading">Фото и видео</h2>
-        <p class="media-block__intro">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+        <p class="media-block__intro">Не можете решиться на путешествие из-за курса?
+          Фотографии
+          помогут вам забыть о
           политике и экономике.</p>
         <div class="media-block__wrapper">
           <div class="media-block__item media-item media-item--first">
@@ -158,9 +160,10 @@
           </div>
         </div>
       </section>
-      <section class="media-block">
+      <section class="media-block media-block--video">
         <h2 class="media-block__heading">Все еще сомневаетесь?</h2>
-        <p class="media-block__intro">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной
+        <p class="media-block__intro media-block__intro--video">Смотрите видеопрезентацию и скорее за билетами, пока они
+          не подорожали в очередной
           раз!</p>
         <picture class="video">
           <source type="image/webp" media="(min-width: 1200px)"
@@ -173,28 +176,28 @@
           <img class="video" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="">
         </picture>
         <div class="media-block__player">
-            <div class="media-block__volume"><a class="media-block__volume-button"></a></div>
-            <div class="media-block__player-block media-block__replay">
+          <div class="media-block__volume"><a class="media-block__volume-button"></a></div>
+          <div class="media-block__player-block media-block__replay">
             <button class="media-block__player-button">
-                <svg class="media-block__replay-icon" width="16" height="20">
-              <use xlink:href="img/sprite.svg#icon-video-replay"></use>
-            </svg>
-          </button>
-        </div>
-        <div class="media-block__player-block media-block__subtitles">
-          <button class="media-block__player-button">
+              <svg class="media-block__replay-icon" width="16" height="20">
+                <use xlink:href="img/sprite.svg#icon-video-replay"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="media-block__player-block media-block__subtitles">
+            <button class="media-block__player-button">
               <svg class="media-block__subtitles-icon" width="32" height="20">
-            <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
-          </svg>
-        </button>
-      </div>
-      <div class="media-block__player-block media-block__fullscreen">
-        <button class="media-block__player-button">
-            <svg class="media-block__fullscreen-icon" width="20" height="20">
-          <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
-        </svg>
-      </button>
-    </div>
+                <use xlink:href="img/sprite.svg#icon-video-subtitles"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="media-block__player-block media-block__fullscreen">
+            <button class="media-block__player-button">
+              <svg class="media-block__fullscreen-icon" width="20" height="20">
+                <use xlink:href="img/sprite.svg#icon-video-fullscreen"></use>
+              </svg>
+            </button>
+          </div>
       </section>
     </main>
     <footer class="page-footer">
