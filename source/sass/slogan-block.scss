@@ -104,7 +104,8 @@
   background-position-y: 79px;
   @media screen and (min-width: $middle-size) {
     & {
-      margin-top: -22px;
+      margin-top: -11px;
+      background-position-y: center;
       background-size: contain;
       width: 459px;
       height: 98px;

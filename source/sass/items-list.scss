@@ -7,9 +7,12 @@
 .items-list--sight{
   @media screen and (min-width: $middle-size) {
     & {
+      display: flex;
+      flex-wrap: wrap;
       margin: 0 auto;
       width: 460px;
-      columns: 2;
+      margin-top: 39px;
+      justify-content: space-between;
     }
   }
   @media screen and (min-width: $large-size) {
@@ -18,17 +21,22 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      margin-top: 41px;
     }
   }
 }
 
 .items-list--contacts{
+  @media screen and (min-width: $middle-size) {
+    margin-top: 27px;
+  }
   @media screen and (min-width: $large-size) {
     & {
       width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
+      margin-top: 76px;
     }
   }
 }
@@ -40,13 +48,36 @@
 }
 
 .items-list__item--height{
-  height: 60px;
+  height: 58px;
+  @media screen and (min-width: $middle-size) {
+    & {
+      margin-bottom: 20px;
+      min-width: 200px;
+    }
+  }
+    @media screen and (min-width: $large-size) {
+    & {
+      min-width: auto;
+    }
+  }
 }
 
+.items-list__item--bottom {
+ @media screen and (min-width: $middle-size) {
+    & {
+      margin-bottom: 32px;
+    }
+  }
+}
 .items-list__item--contacts {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+  @media screen and (min-width: $middle-size) {
+    & {
+      margin-bottom: 25px;
+    }
+  }
   @media screen and (min-width: $large-size) {
     & {
       width: 50%;
@@ -95,6 +126,18 @@
 
 .items-list__memo--contacts{
   white-space: nowrap;
+ @media screen and (min-width: $middle-size) {
+    & {
+      margin-bottom: 11px;
+      margin-left: 24px;
+    }
+  }
+  @media screen and (min-width: $large-size) {
+    & {
+      margin-bottom: 0;
+      margin-left: 0;
+    }
+  }
 }
 
 .items-list__hide{
