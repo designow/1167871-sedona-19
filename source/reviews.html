@@ -12,7 +12,7 @@
   <div class="container">
     <header class="page-header">
       <nav class="header-navigation">
-        <button class="header-navigation__close">
+        <button class="header-navigation__close visually-hidden">
           <svg class="header-navigation__close-icon" width="22.199" height="22.199">
             <use xlink:href="img/sprite.svg#icon-cross"></use>
           </svg>
@@ -24,7 +24,7 @@
           <li class="header-menu__item"><a href="#" class="header-menu__url">Html Academy</a>
         </ul>
       </nav>
-      <button class="page-header__menu-btn">
+      <button class="page-header__menu-btn visually-hidden">
         <svg class="header-navigation__burger-icon" width="22.928" height="21.982px">
           <use xlink:href="img/sprite.svg#icon-menu"></use>
         </svg>
@@ -79,7 +79,7 @@
           </div>
           <div class="reviews__block reviews__block--order-1">
             <h2 class="reviews__heading reviews__heading--align-1">Ваше общее впечатление:</h2>
-            <ul class="items-list">
+            <ul class="items-list items-list--opinion">
               <li class="items-list__item items-list__item--height"><input type="radio" checked name="radio"
                   class="visually-hidden radio-input" id="radio1"><label class="items-list__caption radio"
                   for="radio1">Скорее положительное</label></li>
@@ -96,24 +96,25 @@
               <h2 class="reviews__heading">Посещенные достопримечательности:</h2>
             </span>
             <ul class="items-list items-list--sight">
-              <li class="items-list__item items-list__item--height items-list__item--bottom"><input type="checkbox"
-                  id="check1" class="visually-hidden check-input" checked="true"><label
+              <li class="items-list__item items-list__item--height items-list__item--bottom items-list__item--sight">
+                <input type="checkbox" id="check1" class="visually-hidden check-input" checked="true"><label
                   class="items-list__caption checkbox" for="check1">Мост
                   Дьявола</label></li>
-              <li class="items-list__item items-list__item--height items-list__item--bottom"><input type="checkbox"
-                  id="check2" class="visually-hidden check-input" checked="true"><label
+              <li class="items-list__item items-list__item--height items-list__item--bottom items-list__item--sight">
+                <input type="checkbox" id="check2" class="visually-hidden check-input" checked="true"><label
                   class="items-list__caption checkbox" for="check2">Гора-Колокол</label></li>
-              <li class="items-list__item items-list__item--height"><input type="checkbox" id="check3"
-                  class="visually-hidden check-input" checked="true"><label class="items-list__caption checkbox"
-                  for="check3">Слайд-парк</label></li>
-              <li class="items-list__item items-list__item--height"><input type="checkbox" id="check4"
-                  class="visually-hidden check-input"><label class="items-list__caption checkbox" for="check4">Красные
+              <li class="items-list__item items-list__item--height items-list__item--sight"><input type="checkbox"
+                  id="check3" class="visually-hidden check-input" checked="true"><label
+                  class="items-list__caption checkbox" for="check3">Слайд-парк</label></li>
+              <li class="items-list__item items-list__item--height items-list__item--sight"><input type="checkbox"
+                  id="check4" class="visually-hidden check-input"><label class="items-list__caption checkbox"
+                  for="check4">Красные
                   скалы</label></li>
             </ul>
           </div>
           <div class="reviews__block reviews__block--emotion">
             <span class="reviews__heading_wrapper">
-              <h2 class="reviews__heading">Опишите свои эмоции:</h2>
+              <h2 class="reviews__heading reviews__heading--emotion">Опишите свои эмоции:</h2>
             </span>
             <textarea placeholder="Опишите подробно все свои восторги" class="reviews__memo"></textarea>
             <div class="reviews__wrapper reviews__wrapper--button">

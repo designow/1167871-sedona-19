@@ -5,7 +5,7 @@
   align-items: center;
 }
 .map-block__heading{
-  font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
+  font-family: $bold-font;
   font-weight: bold;
   font-size: 21px;
   margin:0;
@@ -63,6 +63,7 @@
 }
 
 .map-block__button{
+  font-family: $bold-font;
   font-size: 19px;
   margin-top: 33px;
    @media screen and (min-width: $middle-size) {
@@ -72,7 +73,8 @@
   }
      @media screen and (min-width: $large-size) {
     & {
-        margin-top: 46px;
+       font-size: 21px;
+        margin-top: 41px;
     }
   }
 }

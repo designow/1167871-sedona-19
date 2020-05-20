@@ -31,6 +31,7 @@
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 20px;
+  margin-top: 22px;
   text-transform: uppercase;
   text-align: center;
   @media screen and (min-width: $middle-size) {
@@ -49,6 +50,8 @@
 }
 
 .reviews__heading--main{
+    margin-top: 36px;
+    margin-bottom: 29px;
   @media screen and (min-width: $middle-size) {
     & {
       font-size: 30px;
@@ -97,7 +100,7 @@
   border-top: 1px solid #e5e5e5;
   width: 100%;
   padding: 0 20px;
-  margin-top: 20px;
+  margin-top: 0;
   box-sizing: border-box;
   order: 4;
   @media screen and (min-width: $middle-size) {
@@ -117,20 +120,22 @@
   }
    @media screen and (min-width: $large-size) {
     & {
-       margin-top: 26px;
+       margin-top: 24px;
     }
   }
 }
 
 .reviews__block--emotion{
+   padding-bottom: 29px;
    @media screen and (min-width: $middle-size) {
     & {
-       margin-top: 44px;
+      margin-top: 65px;
+      padding-bottom: 57px;
     }
   }
      @media screen and (min-width: $large-size) {
     & {
-       margin-top: 31px;
+      margin-top: 31px;
     }
   }
 }
@@ -143,7 +148,7 @@
   text-transform: uppercase;
   text-align: center;
   max-width: 442px;
-  margin: 0 0 20px 0;
+  margin: 0 0 17px 0;
 
 }
 
@@ -156,7 +161,12 @@
   padding: 20px;
    @media screen and (min-width: $middle-size) {
     & {
-       margin-top: 33px;
+       margin-top: 36px;
+    }
+  }
+     @media screen and (min-width: $large-size) {
+    & {
+       margin-top: 40px;
     }
   }
 }
@@ -173,17 +183,18 @@
       order: 1;
       width: 50%;
       border-right: 1px solid #dbdbdb;
-      margin-top: 39px;
+      margin-top: 44px;
     }
   }
 }
 
 .reviews__block--order-2{
+  margin-top: 0;
   @media screen and (min-width: $middle-size) {
     & {
       order: 2;
-       width: 41%;
-       margin-top: 50px;
+      width: 41%;
+      margin-top: 32px;
     }
   }
     @media screen and (min-width: $large-size) {
@@ -195,15 +206,17 @@
 }
 
 .reviews__block--order-3{
+  padding-bottom: 10px;
   @media screen and (min-width: $middle-size) {
     & {
       order: 3;
+      padding-bottom: 0;
       margin-top: 49px;
     }
   }
     @media screen and (min-width: $large-size) {
     & {
-      margin-top: 45px;
+      margin-top: 50px
     }
   }
 }
@@ -226,6 +239,8 @@
 }
 
 .reviews__heading--align-2{
+    margin-bottom: 24px;
+    margin-top: 20px;
   @media screen and (min-width: $middle-size) {
     & {
       text-align: left;
@@ -265,12 +280,25 @@ text-transform: uppercase;
 
 .reviews__wrapper--button {
     font-family: $bold-font;
-    margin-top: 50px;
-    margin-bottom: 62px;
+    margin-top: 48px;
     align-items: center;
+      @media screen and (min-width: $middle-size) {
+    & {
+     margin-top: 55px;
+    }
+  }
+     @media screen and (min-width: $large-size) {
+    & {
+     margin-top: 55px;
+    }
+  }
 }
 
 .reviews__require{
   font-family: $base-font;
   font-size: 14px;
+}
+
+.reviews__heading--emotion{
+  margin-bottom: 14px;
 }
