@@ -1,0 +1,21 @@
+.popup {
+  position: fixed;
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.popup--fail{
+  width: 400px;
+  height: 347px;
+  visibility: hidden;
+}
+
+.popup--success{
+  width: 640px;
+  height: 347px;
+
+}
