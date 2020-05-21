@@ -7,7 +7,7 @@
 
   @media screen and (min-width: $middle-size) {
     & {
-      padding: 56px 0 30px;
+      padding: 36px 0 30px;
       flex-direction: row;
       justify-content: space-around;
     }
@@ -15,7 +15,6 @@
 
   @media screen and (min-width: $large-size) {
     & {
-      padding-top: 100px;
       padding-bottom: 20px;
     }
   }
@@ -26,21 +25,45 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 35px;
+
+  @media screen and (min-width: $middle-size) {
+    & {
+      margin: 0;
+    }
+  }
 }
 
 .page-footer__copyright {
   display: flex;
-  margin-top: 27px;
+  margin-top: 38px;
   font-size: 14px;
-  color: #000000;
+  color: $base-color;
   text-transform: uppercase;
   text-decoration: none;
   line-height: 26px;
-  padding-right: 40px;
-  padding-bottom: 30px;
+  align-items: center;
+
+  @media screen and (min-width: $middle-size) {
+    & {
+      margin-top: 0;
+    }
+  }
 }
 
-.page-footer__academy-icon {
-  fill: 000000;
-  margin-left: 10px;
+.page-footer__academylogo {
+  line-height: 0;
+}
+
+.page-footer__academylogo:hover,
+.page-footer__academylogo:focus {
+  fill: $header-menu-desktop-hover;
+}
+
+.page-footer__academylogo:active {
+  fill: $header-menu-desktop-down;
+}
+
+.page-footer__developer {
+  margin-right: 10px;
 }

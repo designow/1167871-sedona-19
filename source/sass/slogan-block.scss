@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 60px;
+  margin-top: 55px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     & {
@@ -100,10 +100,13 @@
 .slogan-block__welcome-text--inner {
   background-image: url("../img/text-sedona.svg");
   background-position: center;
+  width: 227px;
+  background-position-y: 79px;
 
   @media screen and (min-width: $middle-size) {
     & {
       margin-top: -22px;
+      background-position-y: center;
       background-size: contain;
       width: 459px;
       height: 98px;

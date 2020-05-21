@@ -14,7 +14,7 @@
 
 .advantage-item__heading {
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: $heading-font-size-mobile;
   line-height: 20px;
   font-weight: bold;
   margin: 0;
@@ -29,9 +29,12 @@
 
 .advantage-item__text {
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: $text-font-size-mobile;
   line-height: 21px;
   font-weight: normal;
+  width: 210px;
+  margin-top: 16px;
+  margin-bottom: 0;
 
   @media screen and (min-width: $middle-size) {
     & {
@@ -102,8 +105,8 @@
 .advantage-item__icon-2 {
   @media screen and (min-width: $middle-size) {
     & {
-      width: 64px;
-      height: 77px;
+      width: 74px;
+      height: 73px;
     }
   }
 }
@@ -145,7 +148,7 @@
 
   @media screen and (min-width: $middle-size) {
     & {
-      top: -70px;
+      top: -72px;
       left: 50%;
       transform: translateX(-36px);
       width: 79px;
@@ -171,10 +174,20 @@
 
 .advantage-item--order-3 {
   order: 3;
+  margin-top: 6px;
 
   @media screen and (min-width: $middle-size) {
     & {
+      margin-top: 100px;
       order: 2;
+    }
+  }
+}
+
+.advantage-item__nowrap {
+  @media screen and (min-width: $large-size) {
+    & {
+      white-space: nowrap;
     }
   }
 }

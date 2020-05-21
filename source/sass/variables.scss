@@ -1,8 +1,41 @@
-$menu-background: #81b3d2;
-$base-font: "PT Sans", arial, helvetica, sans-serif;
-$bold-font: "PT Sans Bold", arial, helvetica, sans-serif;
+$button-background: #81b3d2;
+$button-background-hover: #669ec0;
+$button-background-down:#5496bd;
+$button-background-disabled:#e5e5e5;
+$button-color:#ffffff;
+$button-color-active: rgba(255, 255, 255, 0.3);
+$button-font-size: 21px;
+$button-line-height: 26px;
+$header-menu-mobile-color: #ffffff;
+$header-menu-desktop-color: #000000;
+$header-menu-desktop-hover: #81b3d2;
+$header-menu-desktop-down: rgba(0, 0, 0, 0.3);
+$header-menu-active: #766357;
+$header-menu-active-hover:#604e43;
+$header-menu-active-down: rgba(118, 99, 87, 0.3);
+$base-color: #000000;
+$base-font: "PT Sans",
+  arial,
+  helvetica,
+  sans-serif;
+$bold-font: "PT Sans Bold",
+  arial,
+  helvetica,
+  sans-serif;
 $mobile-max-size: 320px;
 $middle-size: 768px;
 $large-size: 1200px;
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;
+$heading-font-size-mobile: 18px;
+$text-font-size-mobile: 14px;
+$heading-font-size-desktop: 30px;
+$text-font-size-desktop: 14px;
+$base-line-height: 24px;
+$input-base: #f2f2f2;
+$input-hover: #e5e5e5;
+$input-active: #ffffff;
+$input-down: #d5d5d5;
+$input-base-dot: #333333;
+$input-active-dot: #a4a4a4;
+$input-placeholder-color: #000000;

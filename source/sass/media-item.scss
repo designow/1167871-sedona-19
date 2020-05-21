@@ -69,7 +69,14 @@
 .media-item__views {
   display: flex;
   align-items: center;
-  width: 63px;
+  margin-top: 9px;
+  min-width: 64px;
+
+  @media screen and (min-width: $middle-size) {
+    & {
+      margin-top: 0;
+    }
+  }
 }
 
 .media-item__like {
@@ -84,7 +91,7 @@
   font-size: 14px;
   line-height: 24px;
   font-weight: bold;
-  padding-left: 7px;
+  padding-left: 12px;
 }
 
 

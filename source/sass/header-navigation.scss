@@ -1,12 +1,5 @@
 .header-navigation {
-  background-color: $menu-background;
   position: relative;
-
-  @media screen and (min-width: $middle-size) {
-    & {
-      background-color: transparent;
-    }
-  }
 }
 
 .header-navigation__close {
@@ -15,21 +8,24 @@
   background-color: transparent;
   width: 22px;
   height: 22px;
-  margin-top: 18px;
-  margin-right: 20px;
+  margin-top: 17px;
+  margin-right: 26px;
   right: 0;
+  fill: $button-color;
 
   @media screen and (min-width: $middle-size) {
     & {
       display: none;
     }
   }
-}
 
-.header-navigation__close-icon {
-  fill: #fefbf6;
-}
+  &:hover,
+  &:focus {
+    outline: transparent;
+    opacity: 0.6;
+  }
 
-.header-navigation__burger-icon {
-  fill: $menu-background;
+  &:active {
+    opacity: 0.3;
+  }
 }
