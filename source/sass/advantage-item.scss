@@ -35,6 +35,7 @@
   width: 210px;
   margin-top: 16px;
   margin-bottom: 0;
+
   @media screen and (min-width: $middle-size) {
     & {
       width: 163px;
@@ -174,6 +175,7 @@
 .advantage-item--order-3 {
   order: 3;
   margin-top: 6px;
+
   @media screen and (min-width: $middle-size) {
     & {
       margin-top: 100px;
@@ -182,8 +184,8 @@
   }
 }
 
-.advantage-item__nowrap{
-   @media screen and (min-width: $large-size) {
+.advantage-item__nowrap {
+  @media screen and (min-width: $large-size) {
     & {
       white-space: nowrap;
     }

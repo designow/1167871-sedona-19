@@ -3,6 +3,7 @@
   padding: 0;
   margin: 0;
   display: flex;
+
   @media screen and (min-width: $middle-size) {
     & {
       margin-left: -8px;
@@ -28,18 +29,16 @@
   fill: $button-color;
 }
 
-.social-list__url:hover, .social-list__url:focus{
-   background-color: $button-background-hover;
+.social-list__url:hover,
+.social-list__url:focus {
+  background-color: $button-background-hover;
 }
 
-.social-list__url:active{
-   fill: $button-color-active;
-   background-color: $button-background-down;
+.social-list__url:active {
+  fill: $button-color-active;
+  background-color: $button-background-down;
 }
 
-.social-list__url--last{
+.social-list__url--last {
   margin-right: 0;
 }
-
-
-

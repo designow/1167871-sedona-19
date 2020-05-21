@@ -41,12 +41,14 @@
       display: none;
     }
   }
-&:hover, &:focus{
-  outline: transparent;
-  opacity: 0.6;
-}
-&:active{
-  opacity: 0.3;
-}
-}
 
+  &:hover,
+  &:focus {
+    outline: transparent;
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

@@ -46,6 +46,7 @@
   width: 100%;
   display: block;
   padding: 8px 0;
+
   @media screen and (min-width: $middle-size) {
     & {
       color: $header-menu-desktop-color;
@@ -58,19 +59,23 @@
   }
 }
 
-.header-menu__url:hover, .header-menu__url:focus {
+.header-menu__url:hover,
+.header-menu__url:focus {
   background-color: $button-background-hover;
-   @media screen and (min-width: $middle-size) {
+
+  @media screen and (min-width: $middle-size) {
     & {
       color: $header-menu-desktop-hover;
       background-color: transparent;
     }
   }
 }
+
 .header-menu__url:active {
   background-color: $button-background-down;
-  color: rgba(255,255,255,0.3);
-   @media screen and (min-width: $middle-size) {
+  color: rgba(255, 255, 255, 0.3);
+
+  @media screen and (min-width: $middle-size) {
     & {
       background-color: transparent;
       color: $header-menu-desktop-down;
@@ -79,7 +84,7 @@
 }
 
 .header-menu__url--active {
-     @media screen and (min-width: $middle-size) {
+  @media screen and (min-width: $middle-size) {
     & {
       color: $header-menu-active;
     }
@@ -87,7 +92,7 @@
 }
 
 .header-menu__url--active:hover {
- @media screen and (min-width: $middle-size) {
+  @media screen and (min-width: $middle-size) {
     & {
       color: $header-menu-active-hover;
     }
@@ -95,7 +100,7 @@
 }
 
 .header-menu__url--active:active {
- @media screen and (min-width: $middle-size) {
+  @media screen and (min-width: $middle-size) {
     & {
       color: $header-menu-active-down;
     }

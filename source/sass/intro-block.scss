@@ -13,7 +13,6 @@
   line-height: 26px;
   width: 255px;
   padding: 0;
-  margin: 0;
   margin: 41px 0 0;
 
   @media screen and (min-width: $middle-size) {
@@ -33,8 +32,8 @@
   margin: 0;
   padding: 0;
   margin-top: 30px;
-  font-size: 14px;
   line-height: 26px;
+
   @media screen and (min-width: $middle-size) {
     & {
       width: 100%;
@@ -59,20 +58,24 @@
 
 .intro-block__wrapper--grey {
   background-color: #eeeeee;
+
   @media screen and (min-width: $middle-size) {
     & {
       margin-bottom: 0;
     }
-}
+  }
+
   @media screen and (min-width: $large-size) {
     & {
       padding-bottom: 23px;
     }
+  }
 }
-}
+
 .intro-block__wrapper--advantages {
   margin-top: 5px;
   margin-bottom: 35px;
+
   @media screen and (min-width: $middle-size) {
     & {
       margin-top: 29px;
@@ -82,7 +85,7 @@
 
   @media screen and (min-width: $large-size) {
     & {
-     margin: 30px 0 34px 0;
+      margin: 30px 0 34px 0;
     }
   }
 }

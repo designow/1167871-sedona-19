@@ -107,4 +107,3 @@ gulp.task("automate", gulp.series(
   "sprite"));
 
 gulp.task("start", gulp.series("automate", "server"));
-

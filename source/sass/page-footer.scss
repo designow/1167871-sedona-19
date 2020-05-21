@@ -26,7 +26,8 @@
   text-transform: uppercase;
   text-align: center;
   margin-bottom: 35px;
-     @media screen and (min-width: $middle-size) {
+
+  @media screen and (min-width: $middle-size) {
     & {
       margin: 0;
     }
@@ -42,24 +43,27 @@
   text-decoration: none;
   line-height: 26px;
   align-items: center;
-   @media screen and (min-width: $middle-size) {
+
+  @media screen and (min-width: $middle-size) {
     & {
       margin-top: 0;
     }
   }
 }
-.page-footer__academylogo{
+
+.page-footer__academylogo {
   line-height: 0;
 }
 
-.page-footer__academylogo:hover, .page-footer__academylogo:focus{
+.page-footer__academylogo:hover,
+.page-footer__academylogo:focus {
   fill: $header-menu-desktop-hover;
 }
 
-.page-footer__academylogo:active{
+.page-footer__academylogo:active {
   fill: $header-menu-desktop-down;
 }
 
-.page-footer__developer{
+.page-footer__developer {
   margin-right: 10px;
 }

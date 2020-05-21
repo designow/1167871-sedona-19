@@ -43,100 +43,105 @@
     </header>
     <main class="page-main">
       <form action="#" method="post">
-      <section class="reviews">
-        <h1 class="reviews__heading reviews__heading--main">Оставьте свой отзыв</h1>
-        <p class="reviews__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
-          достопримечательностях</p>
-        <div class="reviews__wrapper">
-          <div class="reviews__block reviews__block--order-2">
-            <h2 class="reviews__heading reviews__heading--align-2">Представьтесь:</h2>
-            <ul class="items-list">
-              <li class="items-list__item"><label class="items-list__memo">Имя*:</label><input type="text"
-                  class="items-list__text" placeholder="Петр" required></li>
-              <li class="items-list__item"><label class="items-list__memo">Фамилия*:</label><input type="text"
-                  class="items-list__text" placeholder="Иванов" required></li>
-              <li class="items-list__item"><label class="items-list__memo">Отчество:</label><input type="text"
-                  class="items-list__text" placeholder="Александрович"></li>
-            </ul>
-          </div>
-          <div class="reviews__block reviews__block--order-3">
-            <span class="reviews__heading_wrapper">
-              <h2 class="reviews__heading reviews__heading--lines">Контактная информация:</h2>
-            </span>
-            <ul class="items-list items-list--contacts">
-              <li class="items-list__item items-list__item--contacts"><label
-                  class="items-list__memo items-list__memo--contacts"><span class="items-list__hide">Контактный</span>
-                  телефон*:</label>
-                <div class="items-list__wrapper items-list__wrapper--phone"><input type="tel"
-                    class="items-list__text items-list__text--contacts" placeholder="Введите телефон" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required></div>
-              </li>
-              <li class="items-list__item items-list__item--contacts"><label
-                  class="items-list__memo items-list__memo--contacts">Электронная
-                  почта*:</label>
-                <div class="items-list__wrapper items-list__wrapper--email"><input type="email"
-                    class="items-list__text items-list__text--contacts" placeholder="Введите e-mail" pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required></div>
-              </li>
-            </ul>
-          </div>
-          <div class="reviews__block reviews__block--order-1">
-            <h2 class="reviews__heading reviews__heading--align-1">Ваше общее впечатление:</h2>
-            <ul class="items-list items-list--opinion">
-              <li class="items-list__item items-list__item--height"><input type="radio" checked name="radio"
-                  class="visually-hidden radio-input" id="radio1"><label class="items-list__caption radio"
-                  for="radio1">Скорее положительное</label></li>
-              <li class="items-list__item items-list__item--height"><input type="radio" name="radio"
-                  class="visually-hidden radio-input" id="radio2"><label class="items-list__caption radio"
-                  for="radio2">Скорее отрицательное</label></li>
-              <li class="items-list__item items-list__item--height items-list__item--last"><input type="radio"
-                  name="radio" class="visually-hidden radio-input" id="radio3"><label class="items-list__caption radio"
-                  for="radio3">Затрудняюсь ответить</label></li>
-            </ul>
-          </div>
-          <div class="reviews__block reviews__block--sight">
-            <span class="reviews__heading_wrapper">
-              <h2 class="reviews__heading">Посещенные достопримечательности:</h2>
-            </span>
-            <ul class="items-list items-list--sight">
-              <li class="items-list__item items-list__item--height items-list__item--bottom items-list__item--sight">
-                <input type="checkbox" id="check1" class="visually-hidden check-input" checked="true"><label
-                  class="items-list__caption checkbox" for="check1">Мост
-                  Дьявола</label></li>
-              <li class="items-list__item items-list__item--height items-list__item--bottom items-list__item--sight">
-                <input type="checkbox" id="check2" class="visually-hidden check-input" checked="true"><label
-                  class="items-list__caption checkbox" for="check2">Гора-Колокол</label></li>
-              <li class="items-list__item items-list__item--height items-list__item--sight"><input type="checkbox"
-                  id="check3" class="visually-hidden check-input" checked="true"><label
-                  class="items-list__caption checkbox" for="check3">Слайд-парк</label></li>
-              <li class="items-list__item items-list__item--height items-list__item--sight"><input type="checkbox"
-                  id="check4" class="visually-hidden check-input"><label class="items-list__caption checkbox"
-                  for="check4">Красные
-                  скалы</label></li>
-            </ul>
-          </div>
-          <div class="reviews__block reviews__block--emotion">
-            <span class="reviews__heading_wrapper">
-              <h2 class="reviews__heading reviews__heading--emotion">Опишите свои эмоции:</h2>
-            </span>
-            <textarea placeholder="Опишите подробно все свои восторги" class="reviews__memo"></textarea>
-            <div class="reviews__wrapper reviews__wrapper--button">
-              <button class="reviews__button button" type="submit">Отправить отзыв</button>
-              <span class="reviews__require">* — обязательные поля</span>
+        <section class="reviews">
+          <h1 class="reviews__heading reviews__heading--main">Оставьте свой отзыв</h1>
+          <p class="reviews__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+            достопримечательностях</p>
+          <div class="reviews__wrapper">
+            <div class="reviews__block reviews__block--order-2">
+              <h2 class="reviews__heading reviews__heading--align-2">Представьтесь:</h2>
+              <ul class="items-list">
+                <li class="items-list__item"><label class="items-list__memo">Имя*:</label><input type="text"
+                    class="items-list__text" placeholder="Петр" required></li>
+                <li class="items-list__item"><label class="items-list__memo">Фамилия*:</label><input type="text"
+                    class="items-list__text" placeholder="Иванов" required></li>
+                <li class="items-list__item"><label class="items-list__memo">Отчество:</label><input type="text"
+                    class="items-list__text" placeholder="Александрович"></li>
+              </ul>
+            </div>
+            <div class="reviews__block reviews__block--order-3">
+              <span class="reviews__heading_wrapper">
+                <h2 class="reviews__heading reviews__heading--lines">Контактная информация:</h2>
+              </span>
+              <ul class="items-list items-list--contacts">
+                <li class="items-list__item items-list__item--contacts"><label
+                    class="items-list__memo items-list__memo--contacts"><span class="items-list__hide">Контактный</span>
+                    телефон*:</label>
+                  <div class="items-list__wrapper items-list__wrapper--phone"><input type="tel"
+                      class="items-list__text items-list__text--contacts" placeholder="Введите телефон"
+                      pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}" required></div>
+                </li>
+                <li class="items-list__item items-list__item--contacts"><label
+                    class="items-list__memo items-list__memo--contacts">Электронная
+                    почта*:</label>
+                  <div class="items-list__wrapper items-list__wrapper--email"><input type="email"
+                      class="items-list__text items-list__text--contacts" placeholder="Введите e-mail"
+                      pattern="[^@\s]+@[^@\s]+\.[^@\s]+" required></div>
+                </li>
+              </ul>
+            </div>
+            <div class="reviews__block reviews__block--order-1">
+              <h2 class="reviews__heading reviews__heading--align-1">Ваше общее впечатление:</h2>
+              <ul class="items-list items-list--opinion">
+                <li class="items-list__item items-list__item--height"><input type="radio" checked name="radio"
+                    class="visually-hidden radio-input" id="radio1"><label class="items-list__caption radio"
+                    for="radio1">Скорее положительное</label></li>
+                <li class="items-list__item items-list__item--height"><input type="radio" name="radio"
+                    class="visually-hidden radio-input" id="radio2"><label class="items-list__caption radio"
+                    for="radio2">Скорее отрицательное</label></li>
+                <li class="items-list__item items-list__item--height items-list__item--last"><input type="radio"
+                    name="radio" class="visually-hidden radio-input" id="radio3"><label
+                    class="items-list__caption radio" for="radio3">Затрудняюсь ответить</label></li>
+              </ul>
+            </div>
+            <div class="reviews__block reviews__block--sight">
+              <span class="reviews__heading_wrapper">
+                <h2 class="reviews__heading">Посещенные достопримечательности:</h2>
+              </span>
+              <ul class="items-list items-list--sight">
+                <li class="items-list__item items-list__item--height items-list__item--bottom items-list__item--sight">
+                  <input type="checkbox" id="check1" class="visually-hidden check-input" checked="true"><label
+                    class="items-list__caption checkbox" for="check1">Мост
+                    Дьявола</label></li>
+                <li class="items-list__item items-list__item--height items-list__item--bottom items-list__item--sight">
+                  <input type="checkbox" id="check2" class="visually-hidden check-input" checked="true"><label
+                    class="items-list__caption checkbox" for="check2">Гора-Колокол</label></li>
+                <li class="items-list__item items-list__item--height items-list__item--sight"><input type="checkbox"
+                    id="check3" class="visually-hidden check-input" checked="true"><label
+                    class="items-list__caption checkbox" for="check3">Слайд-парк</label></li>
+                <li class="items-list__item items-list__item--height items-list__item--sight"><input type="checkbox"
+                    id="check4" class="visually-hidden check-input"><label class="items-list__caption checkbox"
+                    for="check4">Красные
+                    скалы</label></li>
+              </ul>
+            </div>
+            <div class="reviews__block reviews__block--emotion">
+              <span class="reviews__heading_wrapper">
+                <h2 class="reviews__heading reviews__heading--emotion">Опишите свои эмоции:</h2>
+              </span>
+              <textarea placeholder="Опишите подробно все свои восторги" class="reviews__memo"></textarea>
+              <div class="reviews__wrapper reviews__wrapper--button">
+                <button class="reviews__button button" type="submit">Отправить отзыв</button>
+                <span class="reviews__require">* — обязательные поля</span>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
       </form>
-      <div class="popup popup--fail">
-        <h2>Что-то пошло не так!</h2>
-        <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-        <button class="button">ОК</button>
+      <div class="popup popup--failure visually-hidden">
+        <h2 class="popup__heading popup__heading--failure">Что-то пошло не так!</h2>
+        <p class="popup__text popup__text--failure">Проверьте поля, выделенные красным, скорее всего вы забыли их
+          заполнить</p>
+        <button class="button popup__button popup__button--failure">ОК</button>
       </div>
 
-      <div class="popup popup--success">
-        <h2>Ваш отзыв отправлен!</h2>
-        <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам.
+      <div class="popup popup--success visually-hidden">
+        <h2 class="popup__heading">Ваш отзыв отправлен!</h2>
+        <p class="popup__text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.
           В ближайшее время мы опубликуем его на сайте.</p>
-        <button class="button">ОК</button>
+        <div class="popup__grey-block">
+          <button class="button popup__button">Закрыть окно</button>
+        </div>
       </div>
 
     </main>

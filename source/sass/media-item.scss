@@ -71,7 +71,8 @@
   align-items: center;
   margin-top: 9px;
   min-width: 64px;
-    @media screen and (min-width: $middle-size) {
+
+  @media screen and (min-width: $middle-size) {
     & {
       margin-top: 0;
     }
@@ -115,5 +116,3 @@
     }
   }
 }
-
-

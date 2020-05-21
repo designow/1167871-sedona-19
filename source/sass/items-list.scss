@@ -4,7 +4,7 @@
   margin: 0;
 }
 
-.items-list--sight{
+.items-list--sight {
   @media screen and (min-width: $middle-size) {
     & {
       display: flex;
@@ -15,6 +15,7 @@
       justify-content: space-between;
     }
   }
+
   @media screen and (min-width: $large-size) {
     & {
       width: 100%;
@@ -26,11 +27,13 @@
   }
 }
 
-.items-list--contacts{
-    margin-top: 26px;
+.items-list--contacts {
+  margin-top: 26px;
+
   @media screen and (min-width: $middle-size) {
     margin-top: 27px;
   }
+
   @media screen and (min-width: $large-size) {
     & {
       width: 100%;
@@ -43,29 +46,32 @@
 }
 
 .items-list__item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
-.items-list__item--height{
+.items-list__item--height {
   height: 58px;
   margin-bottom: 12px;
+
   @media screen and (min-width: $middle-size) {
     & {
       margin-bottom: 20px;
       min-width: 200px;
     }
   }
-    @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
       min-width: auto;
     }
   }
 }
 
-.items-list__item--sight{
+.items-list__item--sight {
   margin-bottom: 22px;
+
   @media screen and (min-width: $middle-size) {
     & {
       margin-bottom: 0;
@@ -75,22 +81,25 @@
 
 
 .items-list__item--bottom {
- @media screen and (min-width: $middle-size) {
+  @media screen and (min-width: $middle-size) {
     & {
       margin-bottom: 32px;
     }
   }
 }
+
 .items-list__item--contacts {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
   margin-bottom: 16px;
+
   @media screen and (min-width: $middle-size) {
     & {
       margin-bottom: 25px;
     }
   }
+
   @media screen and (min-width: $large-size) {
     & {
       width: 50%;
@@ -112,22 +121,26 @@
   background-color: #f2f2f2;
   width: 100%;
   height: 58px;
-  &:hover{
+
+  &:hover {
     background-color: $input-hover;
   }
-   &:focus{
+
+  &:focus {
     outline: transparent;
     border: 4px solid $input-hover;
     background-color: $input-active;
   }
+
   &::placeholder {
-  color: $input-placeholder-color;
-  font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 18px;
+    color: $input-placeholder-color;
+    font-family: $bold-font;
+    font-weight: bold;
+    font-size: 18px;
+  }
 }
-}
-.items-list__text--contacts{
+
+.items-list__text--contacts {
   padding: 20px 70px 20px 20px;
 }
 
@@ -137,16 +150,18 @@
   text-transform: uppercase;
 }
 
-.items-list__memo--contacts{
+.items-list__memo--contacts {
   white-space: nowrap;
   margin-left: 22px;
   margin-bottom: 10px;
- @media screen and (min-width: $middle-size) {
+
+  @media screen and (min-width: $middle-size) {
     & {
       margin-bottom: 11px;
       margin-left: 24px;
     }
   }
+
   @media screen and (min-width: $large-size) {
     & {
       margin-bottom: 0;
@@ -155,7 +170,7 @@
   }
 }
 
-.items-list__hide{
+.items-list__hide {
   @media screen and (min-width: $large-size) {
     & {
       display: none;
@@ -164,21 +179,26 @@
 }
 
 .items-list__caption {
-  font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
+  font-family: $bold-font;
   font-size: 18px;
+  font-weight: bold;
 }
+
 .items-list__wrapper {
   position: relative;
   width: 100%;
+
   @media screen and (min-width: $large-size) {
     & {
       width: 316px;
     }
   }
 }
-.items-list__wrapper--phone::after, .items-list__wrapper--email::after{
+
+.items-list__wrapper--phone::after,
+.items-list__wrapper--email::after {
   position: absolute;
-  content: '';
+  content: "";
   background-color: #e6e6e6;
   width: 58px;
   height: 58px;
@@ -190,16 +210,17 @@
 .items-list__wrapper--phone::after {
   background-image: url("/img/icon-phone.svg");
 }
+
 .items-list__wrapper--email::after {
   background-image: url("/img/icon-mail.svg");
 }
 
-.items-list--opinion{
+.items-list--opinion {
   padding-bottom: 26px;
+
   @media screen and (min-width: $middle-size) {
     & {
       padding-bottom: 0;
     }
   }
 }
-

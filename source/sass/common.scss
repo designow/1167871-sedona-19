@@ -48,33 +48,36 @@ body {
 
 .button {
   border: 0;
-  padding: 0;
-  padding: 19px 0;
+  padding: 16px 0;
+  font-family: $bold-font;
+  font-weight: bold;
   color: $button-color;
   background-color: $button-background;
-  font-size: 21px;
-  font-weight: bold;
+  font-size: $button-font-size;
+  line-height: $button-line-height;
   text-transform: uppercase;
   width: 100%;
   text-decoration: none;
   text-align: center;
 }
 
-.button:hover, .button:focus{
+.button:hover,
+.button:focus {
   background-color: $button-background-hover;
 }
 
-.button:active{
+.button:active {
   color: $button-color-active;
   background-color: $button-background-down;
 }
 
-.radio{
+.radio {
   position: relative;
   padding-left: 80px;
+
   &::after {
     position: absolute;
-    content: '';
+    content: "";
     background-color: $input-base;
     height: 57px;
     width: 57px;
@@ -83,26 +86,30 @@ body {
     top: -17px;
     z-index: 1;
   }
+
   &::before {
-  position: absolute;
-  content: none;
-  background-color: $input-base-dot;
-  width: 22px;
-  height: 22px;
-  border-radius: 50%;
-  left: 18px;
-  top: 0;
-  z-index: 2;
-}
-&:hover::after{
-  background-color: $input-hover;
-}
-&:active::after{
-  background-color: $input-down;
-}
-&:active::before{
-  background-color: $input-active-dot;
-}
+    position: absolute;
+    content: none;
+    background-color: $input-base-dot;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    left: 18px;
+    top: 0;
+    z-index: 2;
+  }
+
+  &:hover::after {
+    background-color: $input-hover;
+  }
+
+  &:active::after {
+    background-color: $input-down;
+  }
+
+  &:active::before {
+    background-color: $input-active-dot;
+  }
 }
 
 
@@ -110,41 +117,46 @@ body {
   content: "";
 }
 
-.checkbox{
+.checkbox {
   position: relative;
   padding-left: 80px;
+
   &::before {
-  content: none;
-  background-image: url("/img/icon-tick.svg");
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 22px;
-  height: 22px;
-  border-radius: 5px;
-  left: 18px;
-  top: 0;
-  z-index: 2;
-}
+    content: none;
+    background-image: url("/img/icon-tick.svg");
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    left: 18px;
+    top: 0;
+    z-index: 2;
+  }
+
   &::after {
-  position: absolute;
-  content: '';
-  background-color: $input-base;
-  height: 57px;
-  width: 57px;
-  border-radius: 5px;
-  left: 0;
-  top: -19px;
-  z-index: 1;
-}
-  &:hover::after{
-  background-color: $input-hover;
-}
-&:active::after{
-  background-color: $input-down;
-}
-&:active::before{
-  opacity: 0.3;
-}
+    position: absolute;
+    content: "";
+    background-color: $input-base;
+    height: 57px;
+    width: 57px;
+    border-radius: 5px;
+    left: 0;
+    top: -19px;
+    z-index: 1;
+  }
+
+  &:hover::after {
+    background-color: $input-hover;
+  }
+
+  &:active::after {
+    background-color: $input-down;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .check-input:checked + label::before {

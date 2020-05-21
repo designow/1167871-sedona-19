@@ -19,6 +19,7 @@
   text-transform: uppercase;
   text-align: center;
   margin: 0;
+
   @media screen and (min-width: $middle-size) {
     & {
       font-size: 21px;
@@ -79,6 +80,7 @@
   text-align: center;
   margin-top: 10px;
   margin-bottom: 45px;
+
   @media screen and (min-width: $middle-size) {
     & {
       margin-top: 21px;
@@ -95,23 +97,25 @@
   }
 }
 
- .advantages__text--grey{
-    margin-top: 16px;
-    margin-bottom: 29px;
-    width: 247px;
-    @media screen and (min-width: $middle-size) {
+.advantages__text--grey {
+  margin-top: 16px;
+  margin-bottom: 29px;
+  width: 247px;
+
+  @media screen and (min-width: $middle-size) {
     & {
-          margin-top: 21px;
-    width: 175px;
-    margin-bottom: 43px;
+      margin-top: 21px;
+      width: 175px;
+      margin-bottom: 43px;
     }
   }
-      @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
       width: 300px;
     }
   }
-  }
+}
 
 
 .advantages__img {
@@ -169,7 +173,8 @@
 .advantages--grey {
   background-color: #eeeeee;
   margin-top: 25px;
-    @media screen and (min-width: $middle-size) {
+
+  @media screen and (min-width: $middle-size) {
     & {
       margin-top: 0;
     }
@@ -205,7 +210,8 @@
 }
 
 .advantages__heading--color {
-    margin-top: 40px;
+  margin-top: 40px;
+
   @media screen and (min-width: $middle-size) {
     & {
       margin: 0;
@@ -243,6 +249,7 @@
 .advantages--blue {
   background-color: #81b3d2;
   margin-top: 3px;
+
   @media screen and (min-width: $middle-size) {
     & {
       margin-top: 50px;

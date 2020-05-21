@@ -6,7 +6,7 @@
 }
 
 .media-block__heading {
-  font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
+  font-family: $bold-font;
   font-size: 18px;
   line-height: 26px;
   text-align: center;
@@ -20,6 +20,7 @@
       margin-top: 69px;
     }
   }
+
   @media screen and (min-width: $large-size) {
     & {
       margin-top: 73px;
@@ -27,45 +28,50 @@
   }
 }
 
-.media-block__heading--main{
+.media-block__heading--main {
   @media screen and (min-width: $middle-size) {
     & {
       margin-top: 74px;
     }
   }
+
   @media screen and (min-width: $large-size) {
     & {
       margin-top: 116px;
     }
   }
 }
+
 .media-block__intro {
-text-transform: uppercase;
-    width: 270px;
-    text-align: center;
-    font-size: 14px;
-    line-height: 24px;
-    margin: 28px 0 27px;
+  text-transform: uppercase;
+  width: 270px;
+  text-align: center;
+  font-size: $text-font-size-mobile;
+  line-height: 24px;
+  margin: 28px 0 27px;
 
   @media screen and (min-width: $middle-size) {
     & {
-      font-size: 14px;
+      font-size: $text-font-size-mobile;
       margin-top: 31px;
       margin-bottom: 68px;
       width: 430px;
     }
   }
 }
-.media-block__intro--video{
-    margin: 25px 0 34px;
-     @media screen and (min-width: $middle-size) {
+
+.media-block__intro--video {
+  margin: 25px 0 34px;
+
+  @media screen and (min-width: $middle-size) {
     & {
-       margin: 33px 0 71px;
+      margin: 33px 0 71px;
     }
   }
-       @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
-       margin: 30px 0 71px;
+      margin: 30px 0 71px;
     }
   }
 }
@@ -105,20 +111,22 @@ text-transform: uppercase;
   }
 }
 
-.media-block__player{
+.media-block__player {
   box-sizing: border-box;
   width: 280px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: -49px;
+
   @media screen and (min-width: $middle-size) {
     & {
       width: 648px;
-      background-color: rgba(0,0,0,0.6);
+      background-color: rgba(0, 0, 0, 0.6);
       margin-top: -96px;
     }
   }
+
   @media screen and (min-width: $large-size) {
     & {
       width: 800px;
@@ -126,29 +134,33 @@ text-transform: uppercase;
   }
 }
 
-.media-block__volume{
+.media-block__volume {
   position: relative;
-  background-color: rgba(0,0,0,0.6);
+  background-color: rgba(0, 0, 0, 0.6);
   height: 45px;
   width: 100%;
-  &::before{
+
+  &::before {
     position: absolute;
     content: "";
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     width: 235px;
     left: 22px;
     height: 3px;
     order: 1;
     top: calc(50% - 1px);
+
     @media screen and (min-width: $middle-size) {
       width: 390px;
       left: 13px;
     }
+
     @media screen and (min-width: $large-size) {
       left: 10px;
       width: 540px;
     }
   }
+
   @media screen and (min-width: $middle-size) {
     & {
       height: 93px;
@@ -157,52 +169,64 @@ text-transform: uppercase;
       background-color: transparent;
     }
   }
-    @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
-          width: 559px;
+      width: 559px;
     }
   }
 }
 
 .media-block__volume-button {
-       position: absolute;
-    background-color: #fff;
-    width: 9px;
-    height: 9px;
-    left: 58px;
-    top: calc(50% - 4px);
-    border-radius: 50%;
-    border: 0;
-     @media screen and (min-width: $middle-size) {
+  position: absolute;
+  background-color: #ffffff;
+  width: 9px;
+  height: 9px;
+  left: 58px;
+  top: calc(50% - 4px);
+  border-radius: 50%;
+  border: 0;
+
+  @media screen and (min-width: $middle-size) {
     & {
       left: 125px;
     }
   }
-       @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
-        left: 122px;
+      left: 122px;
     }
   }
 }
 
-.media-block__replay-icon, .media-block__subtitles-icon, .media-block__fullscreen-icon {
+.media-block__replay-icon,
+.media-block__subtitles-icon,
+.media-block__fullscreen-icon {
   outline: transparent;
   fill: #5c6870;
-  &:hover, &:focus  {
+
+  &:hover,
+  &:focus {
     fill: #333333;
   }
-  &:active  {
+
+  &:active {
     opacity: 0.3;
   }
+
   @media screen and (min-width: $middle-size) {
     & {
       fill: #ffffff;
     }
-    &:hover, &:focus {
+
+    &:hover,
+    &:focus {
       fill: #ffffff;
       opacity: 0.6;
     }
-     &:active {
+
+    &:active {
       fill: #ffffff;
       opacity: 0.3;
     }
@@ -215,36 +239,38 @@ text-transform: uppercase;
   height: 66px;
   justify-content: center;
   align-items: center;
+
   @media screen and (min-width: $middle-size) {
     & {
       height: 93px;
     }
   }
-
 }
 
-.media-block__replay{
+.media-block__replay {
   width: 25%;
   order: 2;
+
   @media screen and (min-width: $middle-size) {
     & {
       order: 1;
       width: 12.5%;
       background-color: transparent;
-
     }
   }
-      @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
-        width: 82px;
-      }
+      width: 82px;
+    }
   }
 }
 
-.media-block__subtitles{
+.media-block__subtitles {
   justify-content: flex-end;
   width: 50%;
   order: 3;
+
   @media screen and (min-width: $middle-size) {
     & {
       width: 12.5%;
@@ -253,7 +279,8 @@ text-transform: uppercase;
       justify-content: center;
     }
   }
-    @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
       width: 92px;
     }
@@ -264,38 +291,42 @@ text-transform: uppercase;
   border: 0;
   background-color: transparent;
 }
+
 .media-block__fullscreen {
   width: 25%;
   order: 4;
-    @media screen and (min-width: $middle-size) {
+
+  @media screen and (min-width: $middle-size) {
     & {
-    width: 9.9%;
-    background-color: transparent;
-    display: flex;
-    justify-content: flex-start;
+      width: 9.9%;
+      background-color: transparent;
+      display: flex;
+      justify-content: flex-start;
     }
   }
+
   @media screen and (min-width: $large-size) {
     & {
-    width: 50px;
-    background-color: transparent;
-    display: flex;
-    justify-content: flex-start;
+      width: 50px;
+      background-color: transparent;
+      display: flex;
+      justify-content: flex-start;
     }
   }
 }
 
 .media-block--video {
   margin-bottom: 38px;
-   @media screen and (min-width: $middle-size) {
+
+  @media screen and (min-width: $middle-size) {
     & {
       margin-bottom: 40px;
     }
   }
-   @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
       margin-bottom: 84px;
     }
   }
-
 }

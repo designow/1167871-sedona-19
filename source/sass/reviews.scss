@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+
   @media screen and (min-width: $large-size) {
     & {
       max-width: 960px;
@@ -10,13 +11,14 @@
   }
 }
 
-.reviews__wrapper{
+.reviews__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
   flex-wrap: wrap;
-    @media screen and (min-width: $middle-size) {
+
+  @media screen and (min-width: $middle-size) {
     & {
       flex-direction: row;
       max-width: 960px;
@@ -27,13 +29,14 @@
 }
 
 .reviews__heading {
-  font-family: "PT Sans Bold", Arial, Helvetica, sans-serif;
+  font-family: $bold-font;
   font-weight: bold;
   font-size: 18px;
   margin-bottom: 20px;
   margin-top: 22px;
   text-transform: uppercase;
   text-align: center;
+
   @media screen and (min-width: $middle-size) {
     & {
       width: 300px;
@@ -41,7 +44,8 @@
       margin: 0 auto 20px auto;
     }
   }
-    @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
       font-size: 21px;
       margin: 0 auto 20px auto;
@@ -49,9 +53,10 @@
   }
 }
 
-.reviews__heading--main{
-    margin-top: 36px;
-    margin-bottom: 29px;
+.reviews__heading--main {
+  margin-top: 36px;
+  margin-bottom: 29px;
+
   @media screen and (min-width: $middle-size) {
     & {
       font-size: 30px;
@@ -60,35 +65,43 @@
       width: 100%;
     }
   }
-    @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
       margin-top: 108px;
       margin-bottom: 25px;
     }
   }
 }
+
 .reviews__heading_wrapper {
   display: block;
   position: relative;
-@media screen and (min-width: $middle-size) {
-    &::before, &::after {
+
+  @media screen and (min-width: $middle-size) {
+    &::before,
+    &::after {
       position: absolute;
-      content: '';
+      content: "";
       height: 1px;
-      background-color:#dbdbdb;
+      background-color: #dbdbdb;
       width: 127px;
       left: 0;
       top: 50%;
     }
+
     &::after {
       right: 0;
       left: auto;
     }
   }
+
   @media screen and (min-width: $large-size) {
-    &::before, &::after {
+    &::before,
+    &::after {
       width: 280px;
     }
+
     &::after {
       width: 280px;
     }
@@ -103,39 +116,44 @@
   margin-top: 0;
   box-sizing: border-box;
   order: 4;
+
   @media screen and (min-width: $middle-size) {
     & {
-       padding: 0;
-       margin-top: 20px;
-       border: 0;
+      padding: 0;
+      margin-top: 20px;
+      border: 0;
     }
   }
 }
 
-.reviews__block--sight{
+.reviews__block--sight {
   @media screen and (min-width: $middle-size) {
     & {
-       margin-top: 29px;
+      margin-top: 29px;
     }
   }
-   @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
-       margin-top: 24px;
+      margin-top: 24px;
     }
   }
 }
 
-.reviews__block--emotion{
-   padding-bottom: 29px;
-   @media screen and (min-width: $middle-size) {
+.reviews__block--emotion {
+  padding-bottom: 35px;
+
+  @media screen and (min-width: $middle-size) {
     & {
       margin-top: 65px;
-      padding-bottom: 57px;
+      padding-bottom: 62px;
     }
   }
-     @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
       margin-top: 31px;
+      padding-bottom: 65px;
     }
   }
 }
@@ -143,13 +161,12 @@
 
 .reviews__text {
   font-family: $base-font;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: $text-font-size-mobile;
+  line-height: $base-line-height;
   text-transform: uppercase;
   text-align: center;
   max-width: 442px;
   margin: 0 0 17px 0;
-
 }
 
 .reviews__memo {
@@ -159,14 +176,16 @@
   width: 100%;
   height: 161px;
   padding: 20px;
-   @media screen and (min-width: $middle-size) {
+
+  @media screen and (min-width: $middle-size) {
     & {
-       margin-top: 36px;
+      margin-top: 36px;
     }
   }
-     @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
-       margin-top: 40px;
+      margin-top: 40px;
     }
   }
 }
@@ -177,7 +196,7 @@
   font-family: $bold-font;
 }
 
-.reviews__block--order-1{
+.reviews__block--order-1 {
   @media screen and (min-width: $middle-size) {
     & {
       order: 1;
@@ -188,8 +207,9 @@
   }
 }
 
-.reviews__block--order-2{
+.reviews__block--order-2 {
   margin-top: 0;
+
   @media screen and (min-width: $middle-size) {
     & {
       order: 2;
@@ -197,16 +217,18 @@
       margin-top: 32px;
     }
   }
-    @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
-       width: 41.5%;
-       margin-top: 20px;
+      width: 41.5%;
+      margin-top: 36px;
     }
   }
 }
 
-.reviews__block--order-3{
+.reviews__block--order-3 {
   padding-bottom: 10px;
+
   @media screen and (min-width: $middle-size) {
     & {
       order: 3;
@@ -214,14 +236,15 @@
       margin-top: 49px;
     }
   }
-    @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
-      margin-top: 50px
+      margin-top: 50px;
     }
   }
 }
 
-.reviews__heading--align-1{
+.reviews__heading--align-1 {
   @media screen and (min-width: $middle-size) {
     & {
       text-align: left;
@@ -230,47 +253,50 @@
       margin-top: 10px;
     }
   }
-   @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
-      margin-top: 0px;
+      margin-top: 0;
       margin-left: 81px;
     }
   }
 }
 
-.reviews__heading--align-2{
-    margin-bottom: 24px;
-    margin-top: 20px;
+.reviews__heading--align-2 {
+  margin-bottom: 24px;
+  margin-top: 20px;
+
   @media screen and (min-width: $middle-size) {
     & {
       text-align: left;
       margin-bottom: 59px;
     }
   }
-    @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
       text-align: left;
-      margin-top: 17px;
-      margin-left: 0px;
-      margin-bottom: 58px;
+      margin-top: 0;
+      margin-left: 0;
+      margin-bottom: 60px;
     }
   }
 }
 
-.reviews__require{
-display: none;
-text-transform: uppercase;
-@media screen and (min-width: $middle-size) {
-  & {
-    display: inline;
+.reviews__require {
+  display: none;
+  text-transform: uppercase;
+  font-family: $base-font;
+  font-size: 14px;
+
+  @media screen and (min-width: $middle-size) {
+    & {
+      display: inline;
+    }
   }
 }
-}
 
-.reviews__button{
-    font-family: $bold-font;
-    font-size: 21px;
-    line-height: 26px;
+.reviews__button {
   @media screen and (min-width: $middle-size) {
     & {
       width: 50%;
@@ -279,26 +305,23 @@ text-transform: uppercase;
 }
 
 .reviews__wrapper--button {
-    font-family: $bold-font;
-    margin-top: 48px;
-    align-items: center;
-      @media screen and (min-width: $middle-size) {
+  font-family: $bold-font;
+  margin-top: 48px;
+  align-items: center;
+
+  @media screen and (min-width: $middle-size) {
     & {
-     margin-top: 55px;
+      margin-top: 55px;
     }
   }
-     @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
-     margin-top: 55px;
+      margin-top: 55px;
     }
   }
 }
 
-.reviews__require{
-  font-family: $base-font;
-  font-size: 14px;
-}
-
-.reviews__heading--emotion{
+.reviews__heading--emotion {
   margin-bottom: 14px;
 }

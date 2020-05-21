@@ -1,17 +1,19 @@
-.map-block{
+.map-block {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.map-block__heading{
+
+.map-block__heading {
   font-family: $bold-font;
   font-weight: bold;
   font-size: 21px;
-  margin:0;
+  margin: 0;
   text-transform: uppercase;
   line-height: 26px;
-    @media screen and (min-width: $middle-size) {
+
+  @media screen and (min-width: $middle-size) {
     & {
       margin-top: 5px;
       font-size: 30px;
@@ -19,34 +21,37 @@
   }
 }
 
-.map-block__text{
+.map-block__text {
   font-size: 14px;
   margin: 19px 0 0;
   text-transform: uppercase;
   text-align: center;
   line-height: 24px;
-   @media screen and (min-width: $middle-size) {
+
+  @media screen and (min-width: $middle-size) {
     & {
       margin: 34px 0 0;
     }
   }
 }
 
-.map-block__map{
-      margin-top: 47px;
-   @media screen and (min-width: $middle-size) {
+.map-block__map {
+  margin-top: 52px;
+
+  @media screen and (min-width: $middle-size) {
     & {
       margin-top: 57px;
     }
   }
-   @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
       margin-top: 64px;
     }
   }
 }
 
-.map-block__wrapper{
+.map-block__wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,6 +59,7 @@
   margin: 0 20px;
   margin-top: 25px;
   width: 279px;
+
   @media screen and (min-width: $middle-size) {
     & {
       margin-top: 50px;
@@ -62,19 +68,19 @@
   }
 }
 
-.map-block__button{
+.map-block__button {
   font-family: $bold-font;
-  font-size: 19px;
   margin-top: 33px;
-   @media screen and (min-width: $middle-size) {
+
+  @media screen and (min-width: $middle-size) {
     & {
-        margin-top: 42px;
+      margin-top: 42px;
     }
   }
-     @media screen and (min-width: $large-size) {
+
+  @media screen and (min-width: $large-size) {
     & {
-       font-size: 21px;
-        margin-top: 41px;
+      margin-top: 45px;
     }
   }
 }
