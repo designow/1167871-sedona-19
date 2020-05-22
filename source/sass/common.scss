@@ -94,7 +94,8 @@ body {
     z-index: 2;
   }
 
-  &:hover::after, &:focus::after  {
+  &:hover::after,
+  &:focus::after {
     background-color: $input-hover;
   }
 
@@ -112,15 +113,15 @@ body {
   content: "";
 }
 
-.radio-input:focus + label::after{
+.radio-input:focus + label::after {
   background-color: $input-hover;
 }
 
-.radio-input:active + label::before{
+.radio-input:active + label::before {
   background-color: $input-active-dot;
 }
 
-.radio-input:active + label::after{
+.radio-input:active + label::after {
   background-color: $input-down;
 }
 
@@ -154,7 +155,8 @@ body {
     z-index: 1;
   }
 
-  &:hover::after,  &:focus::after {
+  &:hover::after,
+  &:focus::after {
     background-color: $input-hover;
   }
 
@@ -187,6 +189,7 @@ body {
 .logotype {
   width: 102px;
   height: 84px;
+
   @media screen and (min-width: $large-size) {
     & {
       width: 187px;
